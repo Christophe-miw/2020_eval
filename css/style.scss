@@ -1,40 +1,98 @@
 @import "mixins";
-
+$CG_bleu: #00465B;
 
 /* S -> Jusqu'à 480px */
-body{
-    background-color:green;
-}
 header{
+    /* Position */
     position: relative;
+    /* Style */
     background-image: url('../img/background.jpg');
     background-size: cover;
     background-position: center;
-    height: 500px;
-}
-.promotion{
-    /* Position */
-    position: absolute;
-    top:55px;
-    right: 25px;
-    transform: rotate(20deg);
+
     /* Dimension */
-    width: 210px;
-    padding: 8px;
-    /* Style */
-    border-radius:10px;
-    background-color: #7F0524;
-    color: white;
-    
-    span:nth-child(1){    
-        font-size: 1.2em;
-    }  
-    span:nth-child(2){
-        font-style: italic;
-        font-size:0.8em
+    height: 500px;
+
+    /* Enfants */
+    .promotion{
+        /* Position */
+        position: absolute;
+        top:55px;
+        right: 25px;
+        transform: rotate(20deg);
+        /* Dimension */
+        width: 210px;
+        padding: 8px;
+        /* Style */
+        border-radius:10px;
+        background-color: #7F0524;
+        color: white;
+        
+        span:nth-child(1){    
+            font-size: 1.2em;
+        }  
+        span:nth-child(2){
+            font-style: italic;
+            font-size:0.8em
+        }
+       
     }
-   
+    .bandeau{
+        /* Position */
+        position: absolute;
+        bottom:20px;
+    
+        /* Comportement */
+        display: flex;
+        flex-direction: column;
+        /* Dimension */
+        height: auto;
+        width: 100%;
+        /* Style */
+        background-color: rgba(153, 153, 153, 0.5);
+        padding-left: 10px;
+    
+        span{
+            /* Style */
+            color:white
+        }
+        span:nth-child(1){
+            /* Style */
+            color:white;
+            /* Espacement */
+            margin-bottom: 0px;
+        }
+        span:nth-child(2){
+            /* Style */
+            font-size: 10px;
+        }
+    
+    }
 }
+.section{
+    /* LOGO + BOUTON */
+    div:nth-child(1){
+        display: flex;
+        align-items: center;
+        .img{
+            width: 55%;
+            img{
+                width: 100%;
+            }
+        }
+        input[type="button"]{
+            width: 170px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid black;
+            color: $CG_bleu;
+            background-color: white;
+            font-size: 25px;
+            font-weight: 250;
+        }
+    }
+}
+
 /* M -> A partir de 480px */
 @include respond-to('M'){
     body{

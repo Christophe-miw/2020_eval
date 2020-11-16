@@ -1,18 +1,18 @@
 @charset "UTF-8";
 /* S -> Jusqu'à 480px */
-body {
-  background-color: green;
-}
-
 header {
+  /* Position */
   position: relative;
+  /* Style */
   background-image: url("../img/background.jpg");
   background-size: cover;
   background-position: center;
+  /* Dimension */
   height: 500px;
+  /* Enfants */
 }
 
-.promotion {
+header .promotion {
   /* Position */
   position: absolute;
   top: 55px;
@@ -28,13 +28,77 @@ header {
   color: white;
 }
 
-.promotion span:nth-child(1) {
+header .promotion span:nth-child(1) {
   font-size: 1.2em;
 }
 
-.promotion span:nth-child(2) {
+header .promotion span:nth-child(2) {
   font-style: italic;
   font-size: 0.8em;
+}
+
+header .bandeau {
+  /* Position */
+  position: absolute;
+  bottom: 20px;
+  /* Comportement */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  /* Dimension */
+  height: auto;
+  width: 100%;
+  /* Style */
+  background-color: rgba(153, 153, 153, 0.5);
+  padding-left: 10px;
+}
+
+header .bandeau span {
+  /* Style */
+  color: white;
+}
+
+header .bandeau span:nth-child(1) {
+  /* Style */
+  color: white;
+  /* Espacement */
+  margin-bottom: 0px;
+}
+
+header .bandeau span:nth-child(2) {
+  /* Style */
+  font-size: 10px;
+}
+
+.section {
+  /* LOGO + BOUTON */
+}
+
+.section div:nth-child(1) {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.section div:nth-child(1) .img {
+  width: 55%;
+}
+
+.section div:nth-child(1) .img img {
+  width: 100%;
+}
+
+.section div:nth-child(1) input[type="button"] {
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: #00465B;
+  background-color: white;
+  font-size: 25px;
+  font-weight: 250;
 }
 
 /* M -> A partir de 480px */
