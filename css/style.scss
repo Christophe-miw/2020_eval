@@ -1,0 +1,249 @@
+// Déclaration des variables couleur :
+
+$bgcolorContainer:rgb(247,255,255);
+$colorPromo:rgb(129,4,38);
+$colorText:rgb(2,70,90);
+
+
+// Importation de la police bernina
+
+@font-face {
+  font-family: 'bernina';
+  src: url('../fonts/BerninaSans-WebCondensedBold.woff2');
+}
+
+img{
+  width:100%;
+}
+.imgFond{
+  height:500px;
+  background:url("../img/background.jpg") no-repeat center center;
+  background-size:cover ;
+}
+
+/* Partie Promotion en haut a droide de l'écran */
+
+.promo{
+  background-color:$colorPromo;
+  width:200px;
+  padding:10px;
+  border-radius: 10px;
+  position:absolute;
+  margin-left:100px;
+  margin-top:80px;
+  transform: rotate(20deg);
+}
+
+.promo p{
+  color:white;
+  font-size: 0.8em;
+  font-family: bernina;
+
+}
+
+/* Partie texte en bas de l'image */
+
+.froid{
+  width:100%;
+  background-color:#bfc9d3;
+  opacity:80%;
+  margin-top: 450px;
+  position: absolute;
+}
+
+.froid p{
+  color:white;
+  font-size:1.2em;
+}
+
+.container{
+  width:100%;
+  background-color: $bgcolorContainer;
+}
+
+.inner{
+  width:100%;
+}
+
+.partie1{
+  display:flex;
+}
+
+.logo, .rdv{
+  width:50%;
+}
+
+.logo{
+  margin-left:10px;
+}
+.rdv input[value]{
+  background-color:transparent;
+  width:80%;
+  height: 50%;
+  border-radius: 10px;
+  margin-top:20px;
+  margin-left:5px;
+  color:$colorText;
+}
+
+
+h1{
+  margin-top:20px;
+  color:$colorText;
+  font-size:2.3em;
+  text-align: center;
+  font-family: bernina; // Utilisation de la police Bernina importée
+}
+
+/* Texte de la partie Principale */
+
+.texte{
+  margin-top:40px;
+  color:$colorText;
+  font-size:1.2em;
+  text-align:center;
+  font-family: bernina; // Utilisation de la police Bernina importée
+}
+
+
+/* Partie Article : */
+
+
+.partieArticle{
+  display:flex;
+  flex-direction: column;
+}
+
+.partieArticle img{
+  width:50%;
+  border-radius:50%;
+  margin-left:90px;
+}
+
+.partieArticle p{
+  margin-top:20px;
+  color:$colorText;
+  font-size:1.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.iceExp p{
+  margin-left: 10px;
+  text-align: left;
+}
+
+
+/* Media Queries tablette : */
+
+@media screen and (min-width: 480px){
+  .promo{
+    width:300px;
+    margin-left:400px;
+  }
+
+  .promo p{
+    font-size: 1.4em;
+  }
+  .partie1{
+    justify-content: space-between;
+  }
+
+  .rdv input[value]{
+    font-size: 2em;
+  }
+
+  .texte{
+    font-size: 1.5em;
+  }
+
+  .img1{
+    order:2;
+  }
+
+  .img2{
+    order:3;
+    margin-left:200px;
+  }
+
+  .img3{
+
+    order:0;
+  }
+
+  .logo, .rdv{
+    width:40%;
+  }
+
+  h1{
+    font-size:4.5em;
+  }
+
+  .iceExp{
+    width:100%;
+  }
+
+  .partieArticle{
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+
+  .partieArticle img{
+    width:100%;
+    margin:0;
+
+  }
+
+  .partieArticle p{
+    font-size:2em;
+  }
+
+  .img1,.img2,.img3{
+    width:50%;
+  }
+}
+
+
+/* Media Querries Desktop : */
+
+
+@media screen and (min-width: 768px ) {
+
+
+  .imgFond{
+    height:800px;
+  }
+
+
+  .froid p{
+    font-size:2em;
+  }
+
+
+  .inner{
+    width:80%;
+    margin:0 auto;
+  }
+
+  .img1,.img2,.img3{
+    width:33%;
+    margin:0;
+  }
+
+
+  .partieArticle {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .texte{
+    font-size:2em;
+  }
+
+  .iceExp{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+}
