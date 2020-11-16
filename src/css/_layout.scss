@@ -84,9 +84,10 @@ div.therapy {
         text-transform: uppercase;
         margin-top: 2rem;
     }
-    &:last-of-type div{
+    &:last-of-type div{ //div dont l'image n'est pas ronde
         border-radius: 50%;
         overflow: hidden;
+        background-color: #fff;
     }
 }
 
