@@ -68,7 +68,10 @@ header {
 
 .presentation {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  h1 {
+    margin-bottom: 50px;
+  }
 }
 
 .iceExp {
@@ -147,8 +150,11 @@ header {
   }
 
   /* les 3 vignettes sur la même ligne */
-  .vignettes div {
-      width: 33%;
+  .vignettes {
+    justify-content: space-between;
+    div {
+      width: initial;
+    }
   }
 
 }
