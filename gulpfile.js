@@ -31,7 +31,7 @@ function sass() {
       .on("error", (err) => notify().write(err))
       .pipe(postcss([autoprefixer()])) // autoprefixer
       //		.pipe(postcss([autoprefixer(), cssnano()])) // autoprefixer  +  minifier
-      // .pipe(purgecss({ content: ["./**/*.html"] })) // purge css
+      .pipe(purgecss({ content: ["./**/*.html"] })) // purge css
       .pipe(sourcemaps.write(".")) // initialize sourcemaps first
       .pipe(dest("css"))
   );
