@@ -1,0 +1,171 @@
+
+/*  POLICES */
+
+@font-face {
+  font-family: "Bernina sans";
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham HTF";
+  src: url("../fonts/Gotham-HTF-Book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container > p:nth-child(4),
+.container > #services{
+  font-family: "Gotham HTF";
+  text-transform: uppercase;
+}
+
+.container > #description{
+  font-family: "Bernina sans";
+}
+
+/*  ELEMENTS REUTILISABLES   */
+
+$darkblue: #00465A;
+$lightblue: #F7FFFF;
+$bloodred: #810426;
+
+@mixin flex{
+  display: flex;
+}
+
+.white-txt{
+  color: white;
+}
+
+/*  HEADER  */
+
+header{
+  @include flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 600px;
+  & #promotion{
+    background-color: $bloodred;
+    padding: 10px;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 30px;
+    transform: rotate(20deg);
+    p:nth-child(1){
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+  }
+  & #accroche{
+    background-color: rgba(120, 120, 120, 0.7);
+    padding: 10px;
+    width: 100%;
+    margin-top: 230px;
+    p{
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* CORPS DE LA PAGE */
+
+.container{
+  @include flex;
+  flex-wrap:wrap;
+  text-align: center;
+  align-items: center;
+  background-color: $lightblue;
+  color: $darkblue;
+  padding: 20px;
+  & .infos{
+    flex-basis: 50%;
+    #rdv{
+      font-size: 1.3em;
+      padding: 10px;
+      border: solid black 1px ;
+      border-radius: 5px;
+    }
+    #logo{
+       display: block;
+       margin: auto;
+       width: 100%;
+    }
+  }
+  & p:nth-child(4){
+    text-align: left;
+    flex-basis: 100%;
+  }
+  & #description{
+    flex-basis: 100%;
+    h1{
+      margin: 15px 0 20px 0;
+      font-size: 40px;
+    }
+    p{
+      font-weight: bold;
+      line-height: 130%;
+    }
+  }
+  & #services{
+    text-align: center;
+    flex-basis: 100%;
+    .visuels{
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+      img{
+        border-radius: 50%;
+        margin-bottom: 20px;
+        width: 60%;
+      }
+    }
+  }
+}
+
+/*  FOOTER  */
+
+
+
+/*Tablette*/
+@media screen and (min-width: 480px) {
+
+  .container{
+    & #services{
+        .visuels {
+          display: inline-block;
+        }
+        .visuels:nth-child(3) {
+          display: block;
+        }
+    }
+  }
+
+}
+/*Téléphone*/
+@media screen and (min-width: 768px) {
+
+  #accroche p{
+    display: inline-block;
+  }
+  #logo{
+    width: 50% !important;
+  }
+  .container{
+    & p:nth-child(4){
+      text-align: right;
+      flex-basis: 100%;
+    }
+    & #services > .visuels:nth-child(3){
+      display: inline-block;
+    }
+  }
+
+}
