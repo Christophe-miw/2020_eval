@@ -1,0 +1,26 @@
+//Définition des breakpoints via une MAP
+$breakpoints: (
+    "M": "480px",
+    "L": "768px",
+    "XL": "1200px",
+);
+
+//Mixin qui permet d'utiliser facilement les mediaQueries
+@mixin respond-to($breakpoint) {
+    // Recuperer la valeur depuis la clé
+    $value: map-get($breakpoints, $breakpoint);
+
+    //Si la clé existe dans la MAP
+    @if $value != null {
+        //Retourner le media queries avec la valeur correspondant à la clé
+        @media (min-width: $value) {
+            @content;
+        }
+    }
+
+    //Si le media n'existe pas dans la map
+    @else {
+        @warn "Problème `#{$breakpoint}`. "
+            + "Vérifier que  `$breakpoints` est définit dans la map.";
+    }
+}
