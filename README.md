@@ -1,3 +1,6 @@
+# STARTER
+https://github.com/ag7-alexis/starter
+
 # Evaluation MIW2018 n°1
 
 ## Polices :

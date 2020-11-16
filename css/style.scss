@@ -1,0 +1,154 @@
+@import "import";
+
+@font-face {
+  font-family: Bernina;
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2");
+}
+
+@font-face {
+  font-family: GothamHTF;
+  src: url("../fonts/Gotham\ HTF\ Book.woff2");
+}
+
+p {
+  color: $text-content;
+  font-family: Bernina;
+}
+
+a {
+  color: $text-title;
+}
+
+@for $h from 1 to 6 +1 {
+  h#{$h} {
+    font-family: Bernina;
+    color: $text-title;
+  }
+}
+
+header {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 400px;
+  position: relative;
+}
+
+.baniere {
+  position: absolute;
+  bottom: 10px;
+  background-color: #797979a1;
+
+  p {
+    font-size: large;
+  }
+
+  span {
+    font-size: small;
+    line-height: 30px;
+  }
+}
+
+.block-info {
+  border-radius: 0.25rem;
+  background-color: #810426;
+  width: 250px;
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  transform: rotate(20deg);
+
+  p {
+    font-size: large;
+  }
+
+  span {
+    font-size: small;
+  }
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: #969696;
+  border: solid #969696;
+}
+
+.btn:hover {
+  background-color: #969696;
+  color: #ffffff;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.titre-presta h2 {
+  font-family: GothamHTF;
+}
+
+.presta h2 {
+  font-family: GothamHTF;
+}
+
+.presta > div > a {
+  display: block;
+}
+
+@media (min-width: $breakpoint-tablette) {
+  header {
+    height: 500px;
+  }
+}
+@media (min-width: $breakpoint-desktop) {
+  header {
+    height: 600px;
+  }
+
+  .titre-presta {
+    justify-content: flex-end;
+  }
+}

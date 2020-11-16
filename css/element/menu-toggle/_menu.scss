@@ -1,0 +1,130 @@
+// Structure HTML
+
+// <nav class="navbar">
+// <div class="bar">
+//     <span class="bar-item logo">
+//         Logo
+//     </span>
+//     <div id="toggle-menu" class="toggle-menu bar-item" onclick="toggle()">
+//         <span></span>
+//         <span></span>
+//         <span></span>
+//     </div>
+// </div>
+
+// <div id="toggle-target" class="close-menu menu">
+//     <a href="#">accueil</a>
+//     <a href="#">tomate</a>
+//     <a href="#">cerise</a>
+// </div>
+// </nav>
+
+// JS toggle
+
+// <script>
+//     function toggle() {
+//         if (document.getElementById('toggle-target').classList.contains('close-menu')) {
+//             document.getElementById('toggle-target').classList.remove('close-menu');
+//             document.getElementById('toggle-menu').classList.add('clicked');
+//         } else {
+//             document.getElementById('toggle-target').classList.add('close-menu');
+//             document.getElementById('toggle-menu').classList.remove('clicked');
+//         }
+//     }
+// </script>
+
+.navbar {
+  display: flex;
+  background-color: $menu-color;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu > a {
+  background-color: $item-menu-color;
+  color: $item-menu-text-color;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu > a:hover {
+  background-color: lighten($color: $item-menu-color, $amount: 10);
+}
+
+.bar-item {
+  height: $height-menu;
+}
+
+.toggle-menu {
+  width: 50px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.toggle-menu > span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: $toggle-color;
+  margin-bottom: 5px;
+}
+
+.clicked > span:nth-child(2n) {
+  visibility: hidden;
+}
+
+.clicked > span:first-child {
+  transform: rotate(45deg);
+  position: relative;
+  top: 15px;
+}
+
+.clicked > span:last-child {
+  transform: rotate(135deg);
+  position: relative;
+  top: -6px;
+}
+
+.close-menu {
+  display: none;
+}
+
+/* desktop */
+@media (min-width: $breakpoint-desktop) {
+  .toggle-menu {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    flex-direction: inherit;
+  }
+}

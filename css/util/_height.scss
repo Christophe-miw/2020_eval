@@ -1,0 +1,31 @@
+// height en px
+
+$heights: 30, 50, 80, 400, 500;
+
+@mixin height($param) {
+  height: unquote($param + "px");
+}
+
+@each $height in $heights {
+  .h-#{$height} {
+    @include height($height);
+  }
+}
+
+// height en %
+
+.h-full {
+  height: 100%;
+}
+
+.h-half {
+  height: 50%;
+}
+
+.h-three-quarter {
+  height: 75%;
+}
+
+.h-quarter {
+  height: 25%;
+}
