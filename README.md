@@ -1,3 +1,8 @@
+--> LIEN DU STARTER <--
+https://github.com/BastienPesce/starter.git
+-------------------------------------------------------------------
+
+
 # Evaluation MIW2018 n°1
 
 ## Polices :

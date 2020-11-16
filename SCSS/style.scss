@@ -1,0 +1,268 @@
+@font-face {
+  font-family:'Bernina' ;
+  src:url("../fonts/BerninaSans-Web-CondensedBold.woff2") format('woff2');
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Light.woff2") format("woff2");
+}
+
+body{
+  font-family: 'Bernina';
+}
+
+.top{
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  height:100vh;
+  .vignette_rouge_promo{
+    width:300px;
+    transform: rotate(35deg);
+    position:absolute;
+    background-color: #910709;
+    top:15%;
+    right:10%;
+    padding:10px;
+    color:white;
+    border-radius:5px;
+    h2{
+      font-size: 2em;
+      display:inline-block;
+      padding:5px;
+    }
+    span{
+      display:inline-block;
+      font-size: 0.5em;
+      font-family: Gotham;
+    }
+  }
+
+  .laissez_le_froid{
+    position:absolute;
+    width:100%;
+    bottom:10px;
+    color:white;
+    background-color: rgba(255,255,255,0.2);
+    .container_froid{
+      width:90%;
+      margin:auto;
+      h2{
+        font-size: 1em;
+        line-height: 2;
+      }
+      p{
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+.container{
+  width:100%;
+  .rdv{
+    width:100%;
+  }
+}
+
+.header_rdv{
+  display:flex;
+  justify-content: space-around;
+  .container_logo_gocryo{
+    width:50%;
+  }
+  .button_rdv{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    button{
+      margin-top:auto;
+      margin-left:auto;
+      margin-bottom:auto;
+      margin-right:auto;
+      border-radius:10px;
+      border:solid 1px #136774;
+      background-color: white;
+      padding:10px;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.title_cryothérapie{
+  width:100%;
+  color:#136774;
+  h2{
+    margin-top:30px;
+    margin-bottom:30px;
+    line-height: 1.5;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    font-size: 3em;
+  }
+  p{
+    width:90%;
+    margin:auto;
+    font-size:1.6em;
+    line-height: 1.2;
+    text-align:center;
+  }
+}
+
+.ice_experience{
+  width:100%;
+  margin-top:50px;
+  margin-bottom:50px;
+  font-family: Gotham;
+  letter-spacing: 0.5em;
+  color:#136774;
+}
+
+.container_galerie{
+  width:100%;
+  .row_galerie{
+    width:50%;
+    margin:auto;
+    .container_image_galerie{
+      width:100%;
+      border-radius:50%;
+      overflow: hidden;
+    }
+  }
+}
+
+.contenu_galerie{
+  margin-top:20px;
+  p{
+    font-family: Gotham;
+    text-align: center;
+    font-size:1.5em;
+    color:#136774;
+  }
+}
+
+@media screen and (min-width:479px){
+  .container{
+    width:90%;
+    margin:auto;
+  }
+
+  .header_rdv{
+    justify-content: space-between;
+    .container_logo_gocryo{
+      width:30%;
+    }
+    .button_rdv{
+      justify-content: flex-end;
+      width:30%;
+      button{
+        margin-top:auto;
+        margin-left:auto;
+        margin-bottom:auto;
+        margin-right:0;
+      }
+    }
+  }
+
+  .container_galerie{
+    .row_galerie{
+      display:flex;
+      flex-wrap: wrap;
+      width:90%;
+      justify-content: space-around;
+      .contenu_galerie{
+        width:50%;
+      }
+      #gym{
+        order:1;
+      }
+      #smartphone{
+        order:2;
+      }
+      #cryolipolyse{
+        order:3;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width:767px) {
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+
+  .container_galerie {
+    .row_galerie {
+      width: 100%;
+
+      .contenu_galerie {
+        width: 33%;
+      }
+    }
+  }
+
+  .top{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    height:100vh;
+    .vignette_rouge_promo{
+      width:300px;
+      transform: rotate(35deg);
+      position:absolute;
+      background-color: #910709;
+      top:15%;
+      right:10%;
+      padding:10px;
+      color:white;
+      border-radius:5px;
+      h2{
+        font-size: 2em;
+        display:inline-block;
+        padding:5px;
+      }
+      span{
+        display:inline-block;
+        font-size: 0.5em;
+        font-family: Gotham;
+      }
+    }
+
+    .laissez_le_froid{
+      position:absolute;
+      width:100%;
+      bottom:10px;
+      color:white;
+      background-color: rgba(255,255,255,0.2);
+      .container_froid{
+        width:90%;
+        margin:auto;
+        display:flex;
+        align-items: baseline;
+        h2{
+          font-size: 1.5em;
+
+        }
+        p{
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+  .ice_experience{
+    text-align: right;
+  }
+
+  .contenu_galerie{
+    p{
+      font-size:1em;
+    }
+  }
+}
