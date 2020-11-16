@@ -33,7 +33,6 @@ $bloodred: #810426;
 
 @mixin flex{
   display: flex;
-  justify-content: center;
 }
 
 .white-txt{
@@ -43,7 +42,7 @@ $bloodred: #810426;
 /*  HEADER  */
 
 header{
-  display: flex;
+  @include flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
@@ -74,13 +73,12 @@ header{
       margin-bottom: 0;
     }
   }
-
 }
 
 /* CORPS DE LA PAGE */
 
 .container{
-  display: flex;
+  @include flex;
   flex-wrap:wrap;
   text-align: center;
   align-items: center;
