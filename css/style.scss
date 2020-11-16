@@ -121,3 +121,33 @@ header {
   }
 
 }
+
+/* media query desktop */
+@media screen and (min-width: 768px) {
+
+  /* les span de l'accroche côte à côte */
+  header .accroche {
+    flex-direction: row;
+    align-items: baseline;
+    span:last-child {
+      margin-left: 10px;
+    }
+  }
+
+  /* container à taille fixe */
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  /* texte iceExp aligné à droite */
+  .iceExp {
+    text-align: right;
+  }
+
+  /* les 3 vignettes sur la même ligne */
+  .vignettes div {
+      width: 33%;
+  }
+
+}
