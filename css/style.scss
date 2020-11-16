@@ -1,19 +1,5 @@
 @import 'fonts';
-
-@mixin PosAbsolute($top, $right: initial, $bottom: initial, $left: initial) {
-  position: absolute;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-}
-
-@mixin GothamLightSpaced($space) {
-  font-family: "GothamHTF";
-  font-weight: 200;
-  letter-spacing: $space;
-  color: inherit;
-}
+@import 'mixins';
 
 header {
   height: 700px;

@@ -16,6 +16,8 @@
   font-weight: 200;
 }
 
+/* définit l'élément en position absolute, placé selon les paramètres */
+/* définit la fonte GothamHTF avec l'espacement en paramètre */
 header {
   height: 700px;
   background: no-repeat center/cover url("../img/background.jpg");
