@@ -1,0 +1,41 @@
+
+//------------------------------------------------flex
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-col {
+    @include flex-center;
+    flex-direction: column;
+}
+
+@mixin flex-center-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+//----------------------------------------------
+@mixin square($width: 0px, $background : false) {
+    width: $width;
+    height: $width;
+    @if $background {
+        background-color: $background;
+    }
+}
+
+@mixin rect($width, $height, $background : false) {
+    width: $width;
+    height: $height;
+    @if $background {
+        background-color: $background;
+    }
+}

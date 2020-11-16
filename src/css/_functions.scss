@@ -1,0 +1,9 @@
+@function contrast_color($bg_color) {
+    @if (lightness($bg_color) > 50) {
+        $color : #000;
+        @return $color;
+    } @else {
+        $color : #fff;
+        @return $color;
+    }
+}
