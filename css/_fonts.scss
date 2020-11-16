@@ -4,6 +4,13 @@
 }
 
 @font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-XLight.woff2") format("woff2");
+  font-family: "GothamHTF";
+  src: url("../fonts/GothamHTF-Medium.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GothamHTF';
+  src: url('../fonts/GothamHTF-Light.woff2') format('woff2');
+  font-weight: 200;
 }
