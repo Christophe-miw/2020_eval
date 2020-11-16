@@ -1,7 +1,8 @@
+/*Declaration des couleurs*/
 $rouge: #810426;
 $white: #FFFFFF;
-$grey: #C5CFD9;
 $blue: #004352;
+/*FIN Declaration des couleurs*/
 
 /*Declaration des polices*/
 @font-face {
@@ -13,6 +14,7 @@ $blue: #004352;
   font-family: "Gotham";
   src: url("../fonts/GothamHTF-Book.woff2") format("woff2");
 }
+
 /*FIN Declaration des polices*/
 
 /*CSS du header*/
@@ -22,7 +24,6 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  //background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   height: 800px;
@@ -43,8 +44,11 @@ header {
   }
 
   .encadre_header {
-    background-color: $grey;
-    opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: darken($blue, 20%);
+    opacity: 40%;
+
     width: 100%;
     color: $white;
     margin-bottom: 40px;
@@ -83,6 +87,7 @@ header {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+
   .logo {
     display: flex;
     flex-direction: row;
@@ -101,6 +106,7 @@ header {
 
 .logo {
   margin-bottom: 50px;
+  align-items: center;
 
   img {
     width: 45%;
@@ -109,7 +115,6 @@ header {
   }
 
   button {
-    align-items: center;
     width: 45%;
     height: 100px;
     background-color: $white;
@@ -143,9 +148,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   .card {
     width: 66%;
     margin: 0 auto;
+
     h3 {
       text-align: center;
       font-family: Gotham;
@@ -160,20 +167,21 @@ header {
 }
 
 
-
 /*FIN CSS corps de la page*/
 
 /*CSS Tablette*/
 @media screen and (min-width: 480px) {
-  .container{
+  .container {
     width: 100%;
   }
-  .logo{
+  .logo {
     justify-content: space-between;
-    img{
+
+    img {
       width: 33%;
     }
-    button{
+
+    button {
       width: 33%;
     }
   }
@@ -181,7 +189,8 @@ header {
   .container_card {
     flex-direction: row;
     flex-wrap: wrap;
-    .card{
+
+    .card {
       width: 40%;
       margin: 5%;
     }
@@ -193,13 +202,19 @@ header {
 
 /*CSS Desktop*/
 @media screen and (min-width: 768px) {
+  header .encadre_header {
+    flex-direction: row;
+    align-items: center;
+  }
   .container {
     width: 80%;
-      .card{
-        width: 25%;
-        margin: 50px;
-      }
-    .ice_experience{
+
+    .card {
+      width: 25%;
+      margin: 50px;
+    }
+
+    .ice_experience {
       justify-content: flex-end;
     }
   }
