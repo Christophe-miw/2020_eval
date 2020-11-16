@@ -283,7 +283,8 @@ template {
   src: url("../fonts/GothamPro.woff2") format("woff2"); }
 body {
   background-size: cover;
-  font-family: Bernina, "serif"; }
+  font-family: Bernina, "serif";
+  color: #03475e; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -291,9 +292,141 @@ body {
 header {
   background-image: url("../img/background.jpg");
   background-size: cover;
-  height: 80vh; }
+  background-position: center;
+  height: 80vh;
+  color: white; }
+  header .reduction {
+    background-color: #810426;
+    border-radius: 10px;
+    position: absolute;
+    top: 10vh;
+    left: 30%;
+    margin-right: 10%;
+    padding: 10px;
+    transform: rotate(25deg);
+    font-size: 1.2em; }
+    header .reduction span {
+      font-size: 0.7em; }
+  header .bando_info {
+    background-color: rgba(169, 169, 169, 0.5);
+    position: absolute;
+    bottom: 22vh;
+    left: 0;
+    padding-left: 15px;
+    width: 100%; }
+    header .bando_info p {
+      margin: 0; }
 
-.ice_experience h3 {
-  font-family: Gotham, "serif"; }
+.content {
+  padding: 5px; }
+  .content nav {
+    display: flex;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center; }
+    .content nav h1 {
+      margin: 0 auto; }
+      .content nav h1 span {
+        display: none; }
+    .content nav .button--rdv {
+      border: 1px #03475e solid;
+      border-radius: 5px;
+      font-size: 1.5em;
+      margin: 0 auto; }
+      .content nav .button--rdv a {
+        text-decoration: none;
+        width: 100%;
+        display: inline-block;
+        padding: 5px; }
+  .content .align--center {
+    text-align: center;
+    margin-bottom: 30px; }
+    .content .align--center h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px; }
+    .content .align--center p {
+      font-size: 1.2em; }
+  .content h3 {
+    font-family: Gotham, "serif"; }
+  .content .ice_experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .content .ice_experience .inner-content {
+      text-align: center;
+      width: 100%; }
+      .content .ice_experience .inner-content div {
+        margin: 10px auto;
+        width: 200px; }
+        .content .ice_experience .inner-content div img {
+          overflow: hidden;
+          border-radius: 100px; }
+      .content .ice_experience .inner-content h3 {
+        margin: 10px 0; }
+
+@media screen and (min-width: 480px) {
+  .content nav {
+    justify-content: space-between; }
+    .content nav svg {
+      width: 300px;
+      height: 200px; }
+    .content nav .button--rdv {
+      border-radius: 15px;
+      font-size: 2.2em; }
+      .content nav .button--rdv a {
+        padding: 10px; }
+  .content .align--center p {
+    font-size: 1.8em; }
+  .content h3 {
+    font-size: 1.8em; }
+  .content .ice_experience {
+    margin-top: 20px; }
+    .content .ice_experience .inner-content {
+      width: 50%;
+      margin: 30px auto; }
+      .content .ice_experience .inner-content:nth-child(2) {
+        order: 3; }
+      .content .ice_experience .inner-content:nth-child(1) {
+        order: 2; } }
+@media screen and (min-width: 768px) {
+  header {
+    background-position: initial;
+    height: 80vh; }
+    header .reduction {
+      left: 75%; }
+    header .bando_info {
+      display: flex;
+      align-items: center;
+      bottom: 22vh; }
+      header .bando_info h3 {
+        font-size: 1.8em;
+        margin: 0; }
+      header .bando_info p {
+        font-size: 1.2em;
+        margin-left: 20px; }
+
+  .content {
+    width: 60%;
+    margin: 0 auto; }
+    .content nav {
+      height: 10vh;
+      margin-bottom: 10%; }
+      .content nav svg {
+        height: 80px; }
+      .content nav .button--rdv a:hover {
+        background-color: #01222d;
+        color: white;
+        border-radius: 15px; }
+    .content .align--center p {
+      font-size: 1.2em; }
+    .content .align--right {
+      text-align: right;
+      margin-top: 50px; }
+    .content h3 {
+      font-size: 1.2em; }
+    .content .ice_experience .inner-content {
+      width: auto; }
+      .content .ice_experience .inner-content div {
+        width: 150px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,18 @@
-%flex_center{
+$TABLET: "480px";
+$DESKTOP: "768px";
+$MENU: $TABLET;
+$COULEUR: #03475e;
+$COULEURFONCE: darken($COULEUR, 10%);
+$COULEURCLAIR: lighten($COULEUR, 25%);
+$RED: #810426;
+$HAUTEUR: 80vh;
+
+%flex_center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: $DESKTOP) {
+  $HAUTEUR: 90vh
 }
