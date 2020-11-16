@@ -21,4 +21,19 @@ header {
     font-weight: 200;
     font-size: 0.6em;
   }
+  .accroche {
+    position: absolute;
+    top: 620px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    background-color: #fff3;
+    font-family: "Bernina Sans";
+    font-size: 1.5em;
+    span:last-child {
+      font-size: 0.6em;
+    }
+  }
 }
