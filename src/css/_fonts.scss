@@ -1,4 +1,3 @@
-
 $georgia: Georgia, Cambria, "Times New Roman", Times, serif;
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $impact: Impact, Charcoal, sans-serif;
@@ -16,3 +15,9 @@ $verdana: Verdana, Geneva, sans-serif;
     font-family: "bernina";
     src: url("/src/fonts/BerninaSans-Web-CondensedBold.woff2");
 }
+
+@font-face {
+    font-family: "gotham";
+    src: url("/src/fonts/GothamHTFLight.ttf");
+}
+

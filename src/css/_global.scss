@@ -1,8 +1,13 @@
 div.wrap {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
 img {
     width: 100%;
+}
+
+body {
+    font-family: bernina;
+    color: $dark_blue;
 }

@@ -1,0 +1,173 @@
+header {
+    height: 100vh;
+    background-image: url("/src/img/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+div.header__promo {
+    width: 80%;
+    max-width: 300px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #761b28;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    transform: translateX(-10%) rotate(15deg);
+    span {
+        font-size: 0.9rem;
+    }
+}
+
+div.header__text {
+    background-color: rgba(#fff, 0.4);
+    color: white;
+    padding: .5rem 1rem;
+    margin-bottom: 3rem;
+    p:last-child {
+        font-size: 0.8rem;
+    }
+}
+
+.presentation {
+    &__logo-rdv {
+        @include flex-center-sb;
+        a {
+            color: $dark_blue;
+            font-family: gotham;
+            font-size: 1.2rem;
+            border: 1px solid $dark_blue;
+            border-radius: 5px;
+            padding: .5rem;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    & ~ p:first-of-type {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: gotham;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+div.therapies {
+    font-family: gotham;
+    margin: 2rem auto 0 auto;
+    @include flex-center-col
+}
+
+div.therapy {
+
+    width: 50%;
+    margin-bottom: 2rem;
+    h3 {
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+    &:last-of-type img{
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
+@media (min-width : 480px) {
+    .presentation {
+        &__logo-rdv {
+            a {
+         
+            }
+        }
+    }
+
+    div.therapies {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    div.therapy {
+        width: 40%;
+        &:first-of-type {
+            order: 2;
+        }
+        &:nth-of-type(2) {
+            order: 3;
+        }
+        &:last-of-type {
+            order: 1;
+        }
+        span.blurred {
+            background-color: lightblue;
+            filter: blur(20px);
+            width: 100%;
+            display: block;
+            height: 2rem;
+            border-radius: 50%;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (min-width : 768px) {
+    div.wrap {
+        width: 768px;
+    }
+    div.header__promo {
+        transform: translateX(-30%) rotate(15deg);
+    }
+
+    div.presentation__logo-rdv {
+        margin-top: 1.5rem;
+        align-items: flex-start;
+    }
+
+    div.header__text {
+        display: flex;
+        align-items: center;
+        p {
+            margin-right: 2rem;
+            font-size: 1.5rem;
+        }
+        p:last-child {
+            font-size: 1.2rem;
+        }
+    }
+
+    h2 {
+        text-align: right;
+    }
+    div.therapies {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    div.therapy {
+        width: 25%;
+        span.blurred {
+            display: none;
+        }
+    }
+
+}
