@@ -1,0 +1,16 @@
+/* définit l'élément en position absolute, placé selon les paramètres */
+@mixin PosAbsolute($top, $right: initial, $bottom: initial, $left: initial) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/* définit la fonte GothamHTF avec l'espacement en paramètre */
+@mixin GothamLightSpaced($space) {
+  font-family: "GothamHTF";
+  font-weight: 200;
+  letter-spacing: $space;
+  color: inherit;
+}

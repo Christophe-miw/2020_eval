@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Bernina Sans";
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GothamHTF";
+  src: url("../fonts/GothamHTF-Medium.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GothamHTF';
+  src: url("../fonts/GothamHTF-Light.woff2") format("woff2");
+  font-weight: 200;
+}
+
+/* définit l'élément en position absolute, placé selon les paramètres */
+/* définit la fonte GothamHTF avec l'espacement en paramètre */
+header {
+  height: 700px;
+  background: no-repeat center/cover url("../img/background.jpg");
+}
+
+header .promo {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  bottom: initial;
+  left: initial;
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #811226;
+  font-family: "GothamHTF";
+  text-align: center;
+}
+
+header .promo small {
+  font-weight: 200;
+  font-size: 0.6em;
+}
+
+header .accroche {
+  position: absolute;
+  top: 620px;
+  right: initial;
+  bottom: initial;
+  left: initial;
+  padding: 0 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  color: #fff;
+  background-color: #fff3;
+  font-family: "Bernina Sans";
+}
+
+header .accroche span:last-child {
+  font-size: 0.6em;
+}
+
+.container {
+  padding: 10px;
+  font-family: "Bernina Sans";
+  color: #12465b;
+}
+
+.logo_bouton {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: -20px 0;
+}
+
+.logo_bouton .logo {
+  width: 50%;
+}
+
+.logo_bouton .bouton {
+  padding: 5px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: "GothamHTF";
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: inherit;
+}
+
+.presentation {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.presentation h1 {
+  margin-bottom: 50px;
+}
+
+.iceExp {
+  font-family: "GothamHTF";
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  color: inherit;
+  font-size: 0.75em;
+  text-align: left;
+}
+
+.vignettes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.vignettes div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.vignettes .imgVignette {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.vignettes .txtVignette {
+  font-family: "GothamHTF";
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: inherit;
+  font-size: 0.75em;
+  text-align: center;
+  margin: 15px 0 30px 0;
+}
+
+/* media query tablette */
+@media screen and (min-width: 480px) {
+  /* logo à taille fixe */
+  .logo_bouton .logo {
+    width: 270px;
+  }
+  /* vignettes affichées en lignes de 2 */
+  .vignettes {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .vignettes div {
+    width: 50%;
+  }
+  /* la dernière vignette se retrouve en 1re position */
+  .vignettes div:last-child {
+    -ms-flex-order: -1;
+        order: -1;
+  }
+}
+
+/* media query desktop */
+@media screen and (min-width: 768px) {
+  /* les span de l'accroche côte à côte */
+  header .accroche {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: baseline;
+        align-items: baseline;
+    font-size: 1.5em;
+  }
+  header .accroche span:last-child {
+    margin-left: 10px;
+  }
+  /* container à taille fixe */
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  /* texte iceExp aligné à droite */
+  .iceExp {
+    text-align: right;
+  }
+  /* les 3 vignettes sur la même ligne */
+  .vignettes {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .vignettes div {
+    width: initial;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
