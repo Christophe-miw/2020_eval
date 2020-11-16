@@ -165,10 +165,8 @@ header{
       text-align: right;
       flex-basis: 100%;
     }
-    & #services{
-      .visuels:nth-child(3) {
-        display: inline-block;
-      }
+    & #services > .visuels:nth-child(3){
+      display: inline-block;
     }
   }
 
