@@ -1,0 +1,193 @@
+    @font-face {
+        font-family: "Bernina";
+        src: url("./fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+    }
+    
+    @font-face {
+        font-family: "Gotham";
+        src: url("./fonts/Gotham\ HTF\ Light.woff2") format("woff2");
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Bernina';
+    }
+    
+    body {
+        font-family: "Gotham", serif;
+    }
+    /* application des styles du header */
+    
+    header {
+        background-image: url('./img/background.jpg');
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-size: 100% 100%;
+    }
+    
+    main {
+        padding: 5px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .sticker {
+        background-color: rgb(141, 17, 17);
+        color: white;
+        width: 270px;
+        padding: 5px;
+        display: flex;
+        border-radius: 10px;
+        transform: rotate(20deg);
+        position: absolute;
+        scale: 0.8;
+        top: 5%;
+        right: 10%;
+        text-align: center;
+    }
+    
+    .sticker h3 {
+        font-family: "Gotham";
+    }
+    
+    .description {
+        font-family: 'Bernina';
+        padding: 10px;
+    }
+    
+    .titre {
+        background-color: rgba(255, 255, 255, 0.507);
+        color: white;
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 70px;
+    }
+    
+    .logo-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-button div {
+        width: 40%;
+    }
+    
+    button {
+        border-radius: 5px;
+        background-color: white;
+        text-shadow: none;
+        border: solid 1px rgb(18, 74, 126);
+        color: rgb(49, 92, 128);
+        font-size: larger;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .logo-button img {
+        width: 50%;
+        max-width: 400px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin: 20px;
+    }
+    
+    h1,
+    .description {
+        color: rgb(49, 92, 128);
+        text-align: center;
+    }
+    
+    .description {
+        font-weight: bold;
+    }
+    
+    .img-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .link img {
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+    
+    .link p {
+        text-transform: uppercase;
+    }
+    
+    .iceExp {
+        color: rgb(49, 92, 128);
+    }
+    
+    small {
+        font-weight: normal;
+    }
+    
+    @media (min-width: 467px) {
+        .img-links {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .link {
+            width: 50%;
+            margin: 0 auto
+        }
+        .iceExp {
+            font-size: 0.8rem;
+            letter-spacing: 1rem;
+            margin: 10px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        header {
+            height: 600px;
+        }
+        .logo-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        button {
+            width: 100%;
+        }
+        .iceExp {
+            text-align: end;
+        }
+        .link {
+            width: 33%;
+        }
+        .link:first-child {
+            order: 1;
+        }
+        .link:last-child {
+            order: 0;
+        }
+        .link:nth-child(2) {
+            order: 2;
+        }
+        .titre {
+            display: flex;
+            align-items: baseline;
+        }
+        .titre h4 {
+            font-size: 2.5rem
+        }
+    }
