@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive</title>
+    <style>
+        /*
+        c'est sur la div parente de chaque image qu'on va régler la largeur
+        donc on définit la largeur de toutes les images à 100%
+        */
+        img {
+            width: 100%;
+        }
+
+
+        /*
+        ici, ces 2 blocs de code sont facultatifs (moi je les mets jamais)
+        c'est juste pour montrer qu'on est en 'mobile first', donc par défaut on veut que les 2 images prennent
+        toute la largeur de la page (elles seront donc l'une au-dessus de l'autre)
+         */
+        .pamplemousses {
+            width: 100%;
+        }
+        .pommes {
+            width: 100%;
+        }
+
+
+        /*
+        voilà la media query qui va afficher les 2 images côte à côte
+        (à partir du moment où la fenêtre fera + de 768px de large)
+         */
+        @media screen and (min-width: 768px) {
+
+            /*
+            c'est là que tout se joue
+            j'applique le display: inline-block à mes 2 divs (qui contiennent mes 2 images)
+            et pour chacune d'entre elles je définis la largeur que je veux
+             */
+            .pamplemousses {
+                display: inline-block;
+                width: 30%;
+            }
+            .pommes {
+                display: inline-block;
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pamplemousses">
+        <img src="pamplemousses.jpg">
+    </div><!--
+    --><div class="pommes">
+        <img src="pommes.jpeg">
+    </div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Bernina;
+  src: url(/fonts/BerninaSans-Web-CondensedBold.woff2);
+}
+
+/* header */
+header {
+  background-image: url("/img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+header .bloc_promotion {
+  background-color: #791d1d;
+  color: white;
+  width: 55%;
+  border-radius: 10px;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  padding: 10px;
+  font-size: 13px;
+  font-family: Bernina;
+  letter-spacing: 2px;
+}
+
+header .bloc_promotion span {
+  font-size: 8px;
+}
+
+header .texte_bas {
+  background-color: #a4a4a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 86%;
+  opacity: 80%;
+  color: white;
+  height: 10%;
+  font-size: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .texte_bas h2, header p {
+  padding-left: 10px;
+}
+
+/* Container boutton et logo */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container button {
+  height: 10vh;
+  width: 176px;
+  font-size: 100%;
+  color: #1a3a55;
+  background-color: #FFF;
+  border: 1px solid;
+  letter-spacing: 0.263em;
+}
+
+/* Titre " Cryothérapie à Corps Entier */
+.Titre {
+  width: 100%;
+  text-align: center;
+  padding-top: 22px;
+  font-family: Bernina;
+  color: #1a3a55;
+}
+
+.Titre h1 {
+  font-size: 54px;
+  padding-bottom: 17px;
+}
+
+/* sous titre */
+h3.titre_Ice {
+  letter-spacing: 3px;
+  color: #1a3a55;
+  padding-top: 35px;
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+/* Images  */
+.cards {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 23px;
+  color: #1a3a55;
+}
+
+.cards .card {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards .card img {
+  border-radius: 74px;
+  width: 36%;
+  padding: 16px;
+}
+
+.cards .card h3 {
+  font-size: 10px;
+}
+
+/*TABLETTE*/
+@media screen and (min-width: 480px) {
+  .container button {
+    width: 142px;
+    font-size: 86%;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards .card {
+    width: 49%;
+    margin: 0 auto;
+  }
+  .cards .card img {
+    width: 67%;
+  }
+  .cards .card h3 {
+    font-size: 20px;
+  }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  header .texte_bas {
+    font-size: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .bloc_promotion {
+    width: 23%;
+    left: 72%;
+    font-size: 12px;
+  }
+  .Titre p {
+    font-size: 23px;
+    padding-bottom: 17px;
+    width: 59%;
+    margin: 0 auto;
+  }
+  h3.titre_Ice {
+    font-size: 18px;
+    float: right;
+    padding-right: 10px;
+  }
+  .cards .card {
+    width: 33%;
+  }
+  .cards .card h3 {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
