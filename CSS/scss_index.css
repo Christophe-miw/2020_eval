@@ -1,0 +1,347 @@
+/* reset.css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* mobile first */
+@font-face {
+  font-family: 'BerninaSans';
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'GothamHTF';
+  src: url("../fonts/gothamHTF/Gotham_HTF_Book/Gotham_HTF_Book.woff2") format("woff2");
+}
+
+.bloc_top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 800px;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.bloc_top .reduction {
+  width: 60%;
+  height: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  text-align: center;
+  border-radius: 25px;
+  -webkit-transform: rotate(0.1turn);
+          transform: rotate(0.1turn);
+  margin-top: 100px;
+  margin-left: 80px;
+  background-color: #bb0707;
+  color: white;
+  font-family: 'BerninaSans';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bloc_top .reduction .petit {
+  font-family: 'GothamHTF';
+  font-size: 18px;
+}
+
+.bloc_top .sloggan {
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin-top: 500px;
+  color: white;
+}
+
+.bloc_top .sloggan h2 {
+  font-size: 20px;
+  font-family: 'BerninaSans';
+}
+
+.bloc_top .sloggan p {
+  font-size: 15px;
+  font-family: 'GothamHTF';
+}
+
+.bloc_content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: #effbff;
+}
+
+.bloc_content .partieLogo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
+  height: 80px;
+}
+
+.bloc_content .partieLogo .logo {
+  width: 200px;
+}
+
+.bloc_content .partieLogo .logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.bloc_content .partieLogo .rdv {
+  width: 200px;
+  height: 90%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.bloc_content .partieLogo .rdv h2 {
+  font-family: 'GothamHTF';
+  font-size: 25px;
+  border: solid black;
+  border-radius: 20px;
+  padding-top: 15px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+.bloc_content .partieText {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.bloc_content .partieText h2 {
+  font-family: 'BerninaSans';
+  font-size: 40px;
+}
+
+.bloc_content .partieText p {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: 'GothamHTF';
+}
+
+.bloc_content .partieImage {
+  margin-top: 30px;
+}
+
+.bloc_content .partieImage h2 {
+  margin-left: 15px;
+  font-family: 'GothamHTF';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bloc_content .partieImage .images {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.bloc_content .partieImage .images .cryo {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloc_content .partieImage .images .cryo img {
+  border-radius: 150px;
+}
+
+.bloc_content .partieImage .images .cryo h3 {
+  margin-top: 15px;
+  margin-left: 50px;
+  font-family: 'GothamHTF';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bloc_content .partieImage .images .corps {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloc_content .partieImage .images .corps h3 {
+  margin-top: 15px;
+  margin-left: 50px;
+  font-family: 'GothamHTF';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bloc_content .partieImage .images .gym {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloc_content .partieImage .images .gym img {
+  border-radius: 150px;
+}
+
+.bloc_content .partieImage .images .gym h3 {
+  margin-top: 15px;
+  margin-left: 50px;
+  font-family: 'GothamHTF';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 480px) {
+  .bloc_top {
+    height: 700px;
+  }
+  .bloc_top .reduction {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
+    width: 40%;
+    height: 110px;
+    margin-left: 320px;
+    font-size: 25px;
+  }
+  .bloc_top .sloggan {
+    margin-top: 380px;
+  }
+  .bloc_content .partieLogo {
+    height: 100px;
+  }
+  .bloc_content .partieLogo .logo {
+    width: 300px;
+  }
+  .bloc_content .partieLogo .rdv {
+    margin-left: 100px;
+  }
+  .bloc_content .partieText h2 {
+    font-size: 50px;
+  }
+  .bloc_content .partieText p {
+    font-size: 20px;
+  }
+  .bloc_content .partieImage .images {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+  .bloc_content .partieImage .images .groupe1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    margin-left: 1%;
+  }
+  .bloc_content .partieImage .images .groupe1 .corps {
+    margin-left: 55%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bloc_top .reduction {
+    width: 30%;
+    margin-left: 800px;
+  }
+  .bloc_top .sloggan {
+    margin-top: 350px;
+    font-size: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .bloc_top .sloggan p {
+    margin-top: 5px;
+  }
+  .bloc_content .partieLogo .logo {
+    margin-left: 25%;
+  }
+  .bloc_content .partieText p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .bloc_content .partieImage h2 {
+    margin-left: 80%;
+  }
+  .bloc_content .partieImage .images {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+  .bloc_content .partieImage .images .groupe1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+  .bloc_content .partieImage .images .groupe1 .gym {
+    margin-left: 5%;
+    margin-right: -50%;
+  }
+  .bloc_content .partieImage .images .groupe1 .corps {
+    margin-right: -30%;
+  }
+  .bloc_content .partieImage .images .smartphone {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=scss_index.css.map */

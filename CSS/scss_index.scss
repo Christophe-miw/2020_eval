@@ -1,0 +1,306 @@
+@import 'reset';
+$rouge : rgb(187,7,7); 
+$blanc : rgba(255,255,255,0.3);
+$bleu : rgb(239,251,255);
+
+/* mobile first */
+@font-face {
+  font-family: 'BerninaSans';
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'GothamHTF';
+  src: url("../fonts/gothamHTF/Gotham_HTF_Book/Gotham_HTF_Book.woff2") format("woff2");
+}
+
+.bloc_top{
+	display: flex;
+	flex-direction: column;
+	height: 800px;
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-position: center;
+	.reduction{
+		width: 60%;
+		height: 90px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
+		text-align: center;
+		border-radius: 25px; 
+		transform: rotate(0.1turn);
+		margin-top: 100px;
+		margin-left: 80px;
+		background-color: $rouge;
+
+		color: white; 
+		font-family: 'BerninaSans';
+		font-size: 20px;
+		text-transform: uppercase;
+
+		.petit{
+			font-family: 'GothamHTF';
+			font-size: 18px;
+		}
+	}
+
+	.sloggan{
+		padding-top: 10px;
+		padding-left: 10px;
+		height: 40px;
+		background-color: $blanc;
+		width: 100%;
+		margin-top:500px; 
+		color: white;
+		h2{
+			font-size: 20px;
+			font-family: 'BerninaSans';
+		}
+		p{
+			font-size: 15px;
+			font-family: 'GothamHTF';
+		}
+
+	}
+}
+.bloc_content{
+	display: flex;
+	flex-direction: column;
+	background-color: $bleu;
+	.partieLogo{
+		display: flex;
+		flex-direction: row;
+		width: 100%; 
+		height: 80px;
+
+		.logo{
+			width: 200px;
+			img{
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.rdv{
+			width: 200px;
+			height: 90%;
+			margin-right: 10px;
+			
+			text-align: center;
+			
+			h2{
+				font-family: 'GothamHTF';
+				font-size: 25px;
+				border: solid black;
+				border-radius: 20px;
+				padding-top: 15px;
+				margin-top: 10px; 
+				padding-bottom: 15px;
+			}
+		}
+		
+	}
+	.partieText{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 30px;
+		h2{
+			font-family: 'BerninaSans';
+			font-size: 40px;
+		}
+		p{
+			margin-top: 30px;
+			margin-left: 30px;
+			margin-right: 30px;
+			font-family: 'GothamHTF';
+		}
+	}
+
+	.partieImage{
+		margin-top: 30px;
+		
+		h2{
+			margin-left: 15px;
+			font-family: 'GothamHTF';
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+		.images{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.cryo{
+				margin-top: 15px;
+				margin-left: auto;
+				margin-right: auto;
+				img{
+					border-radius: 150px;
+				}
+				h3{
+					margin-top: 15px;
+					margin-left: 50px;
+
+					font-family: 'GothamHTF'; 
+					font-size: 20px;
+					text-transform: uppercase;
+				}
+			}
+
+			.corps{
+				margin-top: 15px;
+				margin-left: auto;
+				margin-right: auto;
+
+				h3{
+					margin-top: 15px;
+					margin-left: 50px;
+
+					font-family: 'GothamHTF'; 
+					font-size: 20px;
+					text-transform: uppercase;
+				}
+			}
+
+			.gym{
+				margin-top: 15px;
+				margin-left: auto;
+				margin-right: auto;
+				img{
+					border-radius: 150px;
+				}
+				h3{
+					margin-top: 15px;
+					margin-left: 50px;
+
+					font-family: 'GothamHTF'; 
+					font-size: 20px;
+					text-transform: uppercase;
+				}
+			}
+
+		}
+	}
+}
+
+
+
+
+@media screen and (min-width: 480px){
+	.bloc_top{
+		height: 700px;
+		.reduction{
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 15px;
+			width: 40%;
+			height: 110px;
+			margin-left: 320px;
+			font-size: 25px;
+
+		}
+
+		.sloggan{
+			margin-top:380px; 
+		}
+	}
+	.bloc_content{
+		.partieLogo{
+			height: 100px;
+
+			.logo{
+				width: 300px;
+			}
+			.rdv{
+				margin-left: 100px;
+			}
+		}
+		.partieText{
+			h2{
+				font-size: 50px;
+			}
+			p{
+				font-size: 20px;
+			}
+		}
+
+		.partieImage{
+			.images{
+				flex-direction: row-reverse;
+				.groupe1{
+					display: flex;
+					flex-direction: column-reverse;
+					margin-left: 1%;
+					.corps{
+						margin-left: 55%;
+					}
+				}
+			}
+			
+			
+		}
+	}
+
+}
+
+@media screen and (min-width: 768px){
+	.bloc_top{
+
+		.reduction{
+			width: 30%;
+			margin-left: 800px;
+		}
+
+		.sloggan{
+			margin-top:350px; 
+			font-size: 40px;
+			display: flex;
+			flex-direction: row;
+			p{
+				margin-top: 5px;
+			}
+		}
+	}
+	.bloc_content{
+
+		.partieLogo{
+
+			.logo{
+				margin-left: 25%;
+			}
+		}
+		.partieText{
+
+			p{
+				margin-left: 20%;
+				margin-right: 20%;
+			}
+		}
+
+		.partieImage{
+			h2{
+				margin-left: 80%;
+			}
+			.images{
+				flex-direction: row-reverse;
+				.groupe1{
+					display: flex;
+					flex-direction: row-reverse;
+					.gym{
+						margin-left: 5%;
+						margin-right: -50%;
+					}
+					.corps{
+						margin-right:-30%;
+					}
+				}
+				.smartphone{
+					margin-left: 0;
+				}
+			}
+			
+			
+		}
+	}
+}
+
+

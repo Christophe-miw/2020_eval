@@ -1,5 +1,6 @@
 # Evaluation MIW2018 n°1
-
+## Lien vers starter : 
+https://github.com/Claire-Sabatier/starter
 ## Polices :
 * police principale : Bernina (cf fichier joint)
 * police sous les images : GothamHTF
