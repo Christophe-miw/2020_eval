@@ -1,5 +1,9 @@
 # Evaluation MIW2018 n°1
 
+Meozzi Théo
+
+Mon starter : https://github.com/theomeozzi/starter
+
 ## Polices :
 * police principale : Bernina (cf fichier joint)
 * police sous les images : GothamHTF
