@@ -2,14 +2,13 @@
 
 @font-face {
   font-family: Bernina;
-  src: url('../fonts/BerninaSans-Web-CondensedBold.woff2');
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2");
 }
 
 @font-face {
   font-family: GothamHTF;
-  src: url('../fonts/Gotham\ HTF\ Book.woff2');
+  src: url("../fonts/Gotham\ HTF\ Book.woff2");
 }
-
 
 p {
   color: $text-content;
@@ -29,11 +28,11 @@ a {
 
 header {
   background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    height: 400px;
-    position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 400px;
+  position: relative;
 }
 
 .baniere {
@@ -64,6 +63,23 @@ header {
   background-color: $secondary-color;
 }
 
+.btn {
+  background-color: #ffffff;
+  color: #969696;
+  border: solid #969696;
+}
+
+.btn:hover {
+  background-color: #969696;
+  color: #ffffff;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-white {
   color: #ffffff;
 }
@@ -92,25 +108,29 @@ img {
   border-radius: 50%;
 }
 
+.titre-presta h2 {
+  font-family: GothamHTF;
+}
+
 .presta h2 {
   font-family: GothamHTF;
+}
+
+.presta > div > a {
+  display: block;
 }
 
 @media (min-width: $breakpoint-tablette) {
   header {
     height: 500px;
   }
-  .presta h2 {
-    box-shadow: 0 50px 30px -16px #0400ff7d;
-  }
-
 }
 @media (min-width: $breakpoint-desktop) {
   header {
     height: 600px;
   }
 
-  .presta h2 {
-    box-shadow: unset;
+  .titre-presta {
+    justify-content: flex-end;
   }
 }
