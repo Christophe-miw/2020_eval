@@ -142,9 +142,9 @@ header{
   .container{
     & #services{
         .visuels {
-          display: inline-block !important;
+          display: inline-block;
         }
-        .visuels:nth-child(2) {
+        .visuels:nth-child(3) {
           display: block;
         }
     }
@@ -161,10 +161,14 @@ header{
     width: 50% !important;
   }
   .container{
-
     & p:nth-child(4){
       text-align: right;
       flex-basis: 100%;
+    }
+    & #services{
+      .visuels:nth-child(3) {
+        display: inline-block;
+      }
     }
   }
 
