@@ -68,11 +68,13 @@ header {
 
 .presentation {
   text-align: center;
-  .iceExp {
-    @include GothamLightSpaced(0.2em);
-    font-size: 0.75em;
-    text-align: left;
-  }
+  margin-bottom: 30px;
+}
+
+.iceExp {
+  @include GothamLightSpaced(0.2em);
+  font-size: 0.75em;
+  text-align: left;
 }
 
 .vignettes {

@@ -92,9 +92,10 @@ header .accroche span:last-child {
 
 .presentation {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.presentation .iceExp {
+.iceExp {
   font-family: "GothamHTF";
   font-weight: 200;
   letter-spacing: 0.2em;
