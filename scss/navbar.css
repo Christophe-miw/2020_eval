@@ -1,0 +1,47 @@
+.inactive {
+  display: none;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  position: relative;
+}
+
+#hamburger > img {
+  width: 50px;
+}
+
+.hamb {
+  text-align: right;
+}
+
+.sous-menu {
+  margin: 5px;
+  background-color: #4c3c3c;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: RGB(179 209 67);
+  height: 50px;
+}
+
+.gauche {
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+}
