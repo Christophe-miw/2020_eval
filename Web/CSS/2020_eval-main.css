@@ -351,6 +351,17 @@ main {
     -ms-flex-order: 1;
         order: 1;
   }
+  .header-LegendeImage {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+  }
 }
 
 /***********************************/
