@@ -1,0 +1,135 @@
+//Reset
+@import "../css/reset.css";
+
+@font-face {
+  font-family: "Bernina";
+  src: url("/fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+}
+
+//colors
+$bleu: rgb(25, 25, 109);
+$red: rgb(138, 21, 21);
+
+.header {
+  background-image: url(../img/background.jpg);
+  height: 700px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.incline {
+  transform: rotate(25deg);
+  width: 220px;
+  height: 70px;
+  background-color: $red;
+  margin: 25% 0 0 35%;
+  p {
+    color: white;
+    margin: 0 auto;
+  }
+  p:nth-child(2n) {
+    font-size: 10px;
+  }
+}
+
+.bottom {
+  margin-top: 95%;
+  p {
+    color: white;
+    margin: 0 auto;
+    background-color: rgba($color: #ffffff, $alpha: 0.4);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: Bernina;
+  color: $bleu;
+}
+
+.logo {
+  display: flex;
+  div {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+button {
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+button:hover {
+  background-color: rgb(94, 88, 88);
+  color: white;
+}
+
+.article {
+  div {
+    width: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  @extend h1;
+  font-family: GothamHTF;
+}
+
+.article > div > img {
+  border-radius: 50%;
+}
+
+//Tablette
+@media (min-width: 480px) {
+  .incline {
+    margin: 25% 0 0 50%;
+  }
+
+  .bottom {
+    margin-top: 50%;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .article {
+    width: 25%;
+    margin: 0 12% 0 12%;
+  }
+
+  .article:nth-child(1) {
+    order: 1;
+  }
+
+  .article:nth-child(2) {
+    order: 2;
+  }
+
+  .article:nth-child(3) {
+    order: 0;
+  }
+}
+
+//Desktop
+@media (min-width: 768px) {
+  .incline {
+    margin: 10% 0 0 65%;
+  }
+
+  .bottom {
+    margin-top: 50%;
+  }
+
+  .article {
+    width: 20%;
+    margin: 0 5% 0 5%;
+  }
+}
