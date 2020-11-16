@@ -39,6 +39,15 @@ header {
   position: absolute;
   bottom: 10px;
   background-color: #797979a1;
+
+  p {
+    font-size: large;
+  }
+
+  span {
+    font-size: small;
+    line-height: 30px;
+  }
 }
 
 .block-info {
@@ -49,7 +58,16 @@ header {
   right: 15px;
   top: 60px;
   transform: rotate(20deg);
+
+  p {
+    font-size: large;
+  }
+
+  span {
+    font-size: small;
+  }
 }
+
 
 .text-center {
   text-align: center;
