@@ -1,0 +1,105 @@
+/*définition des fonts*/
+@font-face {
+  font-family: mainFont;
+  src: url("../fonts/BerninaSans-Web.woff2");
+}
+
+@font-face {
+  font-family: GothamHTF;
+}
+
+body {
+  font-family: mainFont;
+}
+
+.logo {
+  width: 150px;
+}
+
+/*placement du bouton et du logo de l'entreprise*/
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.btn {
+  color: $colorBlue;
+  border: 1px solid $colorBlue;
+  padding: 0.2em;
+  border-radius: 5px;
+}
+
+/*placement des deux textes au centre*/
+.main {
+  color: $colorBlue;
+  text-align: center;
+
+  p:nth-child(3) {
+    font-family: GothamHTF;
+  }
+}
+
+/*placement des petites images rondes avec leurs textes de description*/
+.sub-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-family: GothamHTF;
+  }
+
+  .img-bottom:nth-child(1) {
+    order: 3;
+  }
+}
+
+.text-transition {
+  font-family: GothamHTF;
+  color: $colorBlue;
+}
+
+/*definition du style global pour les petites images rondes*/
+.img-bottom {
+  width: 150px;
+  text-align: center;
+  color: $colorBlue;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+/*adaptation au media tablette*/
+@media screen and (min-width: 480px) {
+  .sub-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .img-bottom:nth-child(1) {
+      order: initial;
+    }
+  }
+}
+
+/*adaptation au media desktop*/
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 768px;
+  }
+
+  .text-transition {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header {
+    background: url("../img/background.jpg") no-repeat center center;
+    width: 100%;
+  }
+}

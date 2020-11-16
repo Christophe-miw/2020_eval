@@ -1,0 +1,43 @@
+$colorText: #fff;
+$colorBlue: #00465B;
+
+header {
+  background: url("../img/background.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+/* Placement de la petite bandrole sur le header */
+.top {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: $colorText;
+  padding-left: 1em;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+/*Placement de l'étiquette rouge en haut a droite de l'écran*/
+.label {
+  background-color: darkred;
+  color: $colorText;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.6em;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  div {
+    font-weight: bold;
+    font-size: medium;
+    p {
+      font-family: GothamHTF;
+      font-size: small;
+      font-weight: lighter;
+    }
+  }
+}
