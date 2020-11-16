@@ -29,7 +29,7 @@ header {
   margin-bottom: 20px;
 }
 
-/* line 35, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 36, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 header .affich_promo {
   position: absolute;
   top: 60px;
@@ -41,7 +41,7 @@ header .affich_promo {
   border-radius: 15px;
 }
 
-/* line 46, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 48, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 header .encadre_header {
   display: flex;
   flex-direction: column;
@@ -52,31 +52,31 @@ header .encadre_header {
   margin-bottom: 40px;
 }
 
-/* line 59, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 60, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .affich_promo p {
   font-family: fontText;
   text-align: center;
 }
 
-/* line 64, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 65, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .affich_promo p:first-child {
   font-size: 1.5em;
 }
 
-/* line 70, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 71, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .encadre_header p {
   margin-left: 20px;
   font-family: fontText;
 }
 
-/* line 75, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 76, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .encadre_header p:first-child {
   font-size: 2em;
 }
 
 /*FIN CSS header*/
 /*CSS corps de la page*/
-/* line 84, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 85, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .container {
   width: 95%;
   display: flex;
@@ -85,14 +85,14 @@ header .encadre_header {
   margin: 0 auto;
 }
 
-/* line 91, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 92, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .container .logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 97, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 98, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .container .ice_experience {
   display: flex;
   flex-direction: row;
@@ -100,6 +100,7 @@ header .encadre_header {
   color: #004352;
 }
 
+/*CSS des images et du bouton*/
 /* line 107, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .logo {
   margin-bottom: 50px;
@@ -124,12 +125,14 @@ header .encadre_header {
   border-radius: 15px;
 }
 
-/* line 128, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/*FIN CSS des images et du bouton*/
+/*CSS des titres de la page*/
+/* line 130, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .titre {
   margin-bottom: 50px;
 }
 
-/* line 131, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 133, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .titre h1 {
   color: #004352;
   text-align: center;
@@ -138,7 +141,7 @@ header .encadre_header {
   margin-bottom: 50px;
 }
 
-/* line 139, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 141, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .titre h2 {
   color: #004352;
   text-align: center;
@@ -146,20 +149,22 @@ header .encadre_header {
   font-size: 2em;
 }
 
-/* line 147, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/*FIN CSS des images et du bouton*/
+/*CSS des CARTES de soin*/
+/* line 151, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .container_card {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* line 152, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 156, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .container_card .card {
   width: 66%;
   margin: 0 auto;
 }
 
-/* line 156, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 160, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .container_card .card h3 {
   text-align: center;
   font-family: Gotham;
@@ -167,41 +172,42 @@ header .encadre_header {
   font-size: 1.5em;
 }
 
-/* line 163, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+/* line 167, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
 .container_card .card img {
   border-radius: 50%;
 }
 
+/*FIN CSS des CARTES de soin*/
 /*FIN CSS corps de la page*/
 /*CSS Tablette*/
 @media screen and (min-width: 480px) {
-  /* line 174, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 177, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .container {
     width: 100%;
   }
-  /* line 177, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 180, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .logo {
     justify-content: space-between;
   }
-  /* line 180, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 182, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .logo img {
     width: 33%;
   }
-  /* line 184, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 186, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .logo button {
     width: 33%;
   }
-  /* line 189, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 191, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .container_card {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  /* line 193, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 195, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .container_card .card {
     width: 40%;
     margin: 5%;
   }
-  /* line 198, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 200, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .card:last-child {
     order: -1;
   }
@@ -209,21 +215,21 @@ header .encadre_header {
 
 /*CSS Desktop*/
 @media screen and (min-width: 768px) {
-  /* line 205, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 207, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   header .encadre_header {
     flex-direction: row;
     align-items: center;
   }
-  /* line 209, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 211, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .container {
     width: 80%;
   }
-  /* line 212, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 214, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .container .card {
     width: 25%;
     margin: 50px;
   }
-  /* line 217, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
+  /* line 219, D:/wamp64/www/MIW/HTML-CSS/2020_eval/css/scss/style.scss */
   .container .ice_experience {
     justify-content: flex-end;
   }
