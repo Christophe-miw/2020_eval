@@ -41,5 +41,5 @@ et au grand public de bénéficier de cette thérapie puissante et novatrice.
 
 
  <a href="https://github.com/michelgege/starter_gulp">
-    Lien vers mon starter :
+    Lien vers mon starter
  </a>
