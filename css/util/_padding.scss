@@ -1,0 +1,19 @@
+$paddings: 10, 20, 5, 40;
+
+@mixin padding($param) {
+  padding: unquote($param + "px");
+}
+
+@each $padding in $paddings {
+  .p-#{$padding} {
+    @include padding($padding);
+  }
+}
+
+.p-nav-fixed {
+  padding-top: $height-menu;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}

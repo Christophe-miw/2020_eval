@@ -1,0 +1,47 @@
+$grid-columns: 12;
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+// boucle pour créer les colonnes avec une certaine width et suivant les breakpoints
+@for $c from 1 to $grid-columns + 1 {
+  .col-#{$c} {
+    width: 100% / $grid-columns * $c;
+  }
+
+  .col-sm-#{$c} {
+    width: 100%;
+  }
+
+  .col-md-#{$c} {
+    width: 100%;
+  }
+
+}
+
+// Tablette
+@media (min-width: $breakpoint-tablette) {
+
+  @for $c from 1 to $grid-columns + 1 {
+    .col-sm-#{$c} {
+      width: 100% / $grid-columns * $c;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: $breakpoint-desktop) {
+  @for $c from 1 to $grid-columns + 1 {
+    .col-md-#{$c} {
+      width: 100% / $grid-columns * $c;
+    }
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}

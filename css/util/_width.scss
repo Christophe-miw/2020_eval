@@ -1,0 +1,41 @@
+// width en px
+
+$widths: 30, 50, 80, 400, 500, 600;
+
+@mixin width($param) {
+  max-width: unquote($param + "px");
+}
+
+@each $width in $widths {
+  .w-#{$width} {
+    @include width($width);
+  }
+}
+
+// width breakpoint
+
+.w-tablette {
+  max-width: $breakpoint-tablette;
+}
+
+.w-desktop {
+  max-width: $breakpoint-desktop;
+}
+
+// width en %
+
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.w-three-quarter {
+  width: 75%;
+}
+
+.w-quarter {
+  width: 25%;
+}

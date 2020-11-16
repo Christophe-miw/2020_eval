@@ -1,0 +1,43 @@
+// <div class="social-media">
+//         <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+//         <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+//         <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+//         <a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+//         <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
+//         <a href="#"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
+//     </div>
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 30vh;
+  }
+
+  .social-media a {
+    background-color: #2682c2;
+    color: #ffffff;
+    height: 45px;
+    min-width: 45px;
+    font-size: 1.6em;
+    text-align: center;
+    position: relative;
+  }
+
+  .social-media a span {
+    visibility: hidden;
+    padding-left: 10px;
+    position: absolute;
+    padding-right: 10px;
+  }
+
+  .social-media a:hover > span {
+    visibility: visible;
+    background-color: #10435f;
+    height: 45px;
+  }
+
+  .social-media a:hover {
+    background-color: #10435f;
+  }

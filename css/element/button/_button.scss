@@ -1,0 +1,30 @@
+$default-btn-color: #969696;
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 0.25rem;
+  background-color: $default-btn-color;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: lighten($color: $default-btn-color, $amount: 10);
+}
+
+.btn-primary {
+  background-color: $primary-color;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+}
+
+.btn-primary:hover {
+  background-color: lighten($color: $primary-color, $amount: 10);
+}
+
+.btn-secondary:hover {
+  background-color: lighten($color: $secondary-color, $amount: 10);
+}
