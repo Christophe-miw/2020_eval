@@ -92,13 +92,36 @@ header .accroche span:last-child {
   text-align: center;
 }
 
-.presentation .txtVignette {
+.presentation .iceExp {
   font-family: "GothamHTF";
   font-weight: 200;
   letter-spacing: 0.2em;
   color: inherit;
   font-size: 0.75em;
   text-align: left;
+}
+
+.vignettes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.vignettes .imgVignette {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.vignettes .txtVignette {
+  font-family: "GothamHTF";
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  color: inherit;
+  font-size: 0.75em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

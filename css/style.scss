@@ -61,15 +61,30 @@ header {
     border: 1px solid #777;
     border-radius: 10px;
     background-color: #fff;
-  @include GothamLightSpaced(0.05em);
+    @include GothamLightSpaced(0.05em);
   }
 }
 
 .presentation {
   text-align: center;
-  .txtVignette {
+  .iceExp {
     @include GothamLightSpaced(0.2em);
     font-size: 0.75em;
     text-align: left;
+  }
+}
+
+.vignettes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .imgVignette {
+    border-radius: 50%;
+    width: 200px;
+  }
+  .txtVignette {
+    @include GothamLightSpaced(0.05em);
+    font-size: 0.75em;
+    text-align: center;
   }
 }
