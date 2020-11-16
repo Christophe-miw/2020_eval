@@ -4,8 +4,41 @@
 }
 
 @font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-XLight.woff2") format("woff2");
+  font-family: "GothamHTF";
+  src: url("../fonts/GothamHTF-Medium.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GothamHTF';
+  src: url("../fonts/GothamHTF-Light.woff2") format("woff2");
+  font-weight: 200;
+}
+
+header {
+  height: 700px;
+  background: no-repeat center/cover url("../img/background.jpg");
+}
+
+header .promo {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #811226;
+  font-family: "GothamHTF";
+  font-size: 1.5em;
+  text-align: center;
+}
+
+header .promo small {
+  font-weight: 200;
+  font-size: 0.6em;
 }
 
 /*# sourceMappingURL=style.css.map */
