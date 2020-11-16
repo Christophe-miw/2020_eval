@@ -1,0 +1,116 @@
+@import "import";
+
+@font-face {
+  font-family: Bernina;
+  src: url('../fonts/BerninaSans-Web-CondensedBold.woff2');
+}
+
+@font-face {
+  font-family: GothamHTF;
+  src: url('../fonts/Gotham\ HTF\ Book.woff2');
+}
+
+
+p {
+  color: $text-content;
+  font-family: Bernina;
+}
+
+a {
+  color: $text-title;
+}
+
+@for $h from 1 to 6 +1 {
+  h#{$h} {
+    font-family: Bernina;
+    color: $text-title;
+  }
+}
+
+header {
+  background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 400px;
+    position: relative;
+}
+
+.baniere {
+  position: absolute;
+  bottom: 10px;
+  background-color: #797979a1;
+}
+
+.block-info {
+  border-radius: 0.25rem;
+  background-color: #810426;
+  width: 250px;
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  transform: rotate(20deg);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.presta h2 {
+  font-family: GothamHTF;
+}
+
+@media (min-width: $breakpoint-tablette) {
+  header {
+    height: 500px;
+  }
+  .presta h2 {
+    box-shadow: 0 50px 30px -16px #0400ff7d;
+  }
+
+}
+@media (min-width: $breakpoint-desktop) {
+  header {
+    height: 600px;
+  }
+
+  .presta h2 {
+    box-shadow: unset;
+  }
+}
