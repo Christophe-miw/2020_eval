@@ -53,6 +53,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: -20px 0;
   .logo {
     width: 50%;
   }
@@ -78,6 +79,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .imgVignette {
     border-radius: 50%;
     width: 200px;
@@ -87,4 +93,29 @@ header {
     font-size: 0.75em;
     text-align: center;
   }
+}
+
+/* media query tablette */
+@media screen and (min-width: 480px) {
+
+  /* logo à taille fixe */
+  .logo_bouton .logo {
+    width: 270px;
+  }
+
+  /* vignettes affichées en lignes de 2 */
+  .vignettes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      width: 50%;
+    }
+  }
+
+  /* la dernière vignette se retrouve en 1re position */
+  .vignettes div:last-child {
+    order: -1;
+  }
+
 }

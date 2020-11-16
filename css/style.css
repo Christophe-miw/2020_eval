@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Bernina Sans";
   src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
@@ -71,6 +72,7 @@ header .accroche span:last-child {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
+  margin: -20px 0;
 }
 
 .logo_bouton .logo {
@@ -110,6 +112,15 @@ header .accroche span:last-child {
       align-items: center;
 }
 
+.vignettes div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 .vignettes .imgVignette {
   border-radius: 50%;
   width: 200px;
@@ -122,6 +133,31 @@ header .accroche span:last-child {
   color: inherit;
   font-size: 0.75em;
   text-align: center;
+}
+
+/* media query tablette */
+@media screen and (min-width: 480px) {
+  /* logo à taille fixe */
+  .logo_bouton .logo {
+    width: 270px;
+  }
+  /* vignettes affichées en lignes de 2 */
+  .vignettes {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .vignettes div {
+    width: 50%;
+  }
+  /* la dernière vignette se retrouve en 1re position */
+  .vignettes div:last-child {
+    -ms-flex-order: -1;
+        order: -1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
