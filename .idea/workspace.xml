@@ -20,22 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9fbc1e2-62df-44c7-b593-adcaefb53450" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/2020_eval.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Gotham-HTF-Book.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maquettes/page_466max.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maquettes/page_668max.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maquettes/page_desktop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_466max.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_668max.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_desktop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maquettes/page_466max.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maquettes/page_668max.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maquettes/page_desktop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605517588631</updated>
-      <workItem from="1605517589700" duration="10036000" />
+      <workItem from="1605517589700" duration="10119000" />
     </task>
     <servers />
   </component>

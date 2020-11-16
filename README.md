@@ -1,5 +1,10 @@
 # Evaluation MIW2018 n°1
 
+
+## LIEN STARTER 
+
+https://github.com/Rodriguoh/starter.git
+
 ## Polices :
 * police principale : Bernina (cf fichier joint)
 * police sous les images : GothamHTF
