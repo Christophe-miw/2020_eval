@@ -417,6 +417,12 @@ body {
 }
 
 /* line 24, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+.container {
+  max-width: 996px;
+  margin: 0 auto;
+}
+
+/* line 29, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top {
   background: url("../img/background.jpg");
   background-size: cover;
@@ -427,24 +433,24 @@ body {
   justify-content: space-between;
 }
 
-/* line 33, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 38, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top .promo {
   display: flex;
   justify-content: flex-end;
   font-family: 'Gotham_Book';
 }
 
-/* line 38, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 43, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top .promo span:first-of-type {
   font-size: 25px;
 }
 
-/* line 42, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 47, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top .promo span:last-of-type {
   font-size: 15px;
 }
 
-/* line 46, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 51, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top .promo div:first-child {
   color: white;
   background-color: #810426;
@@ -456,7 +462,7 @@ body {
   transform: rotate(30deg);
 }
 
-/* line 58, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 63, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top .conseille {
   background-color: rgba(255, 255, 255, 0.2);
   display: flex;
@@ -465,22 +471,22 @@ body {
   margin-bottom: 25px;
 }
 
-/* line 65, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 70, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top .conseille span {
   padding-left: 20px;
 }
 
-/* line 69, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 74, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top .conseille span:first-of-type {
   font-size: 17px;
 }
 
-/* line 73, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 78, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_top .conseille span:last-of-type {
   font-size: 14px;
 }
 
-/* line 79, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 84, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_logo {
   display: flex;
   flex-direction: row;
@@ -488,14 +494,14 @@ body {
   height: 100px;
 }
 
-/* line 85, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 90, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_logo div {
   width: 50%;
   display: flex;
   justify-content: center;
 }
 
-/* line 91, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 96, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_logo .button_rdv {
   border: 1px solid #044359;
   border-radius: 5px;
@@ -509,14 +515,14 @@ body {
   margin-top: 25px;
 }
 
-/* line 105, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 110, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_title {
   text-align: center;
   color: #044359;
   font-size: 20px;
 }
 
-/* line 111, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 116, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_description {
   display: flex;
   text-align: center;
@@ -525,7 +531,7 @@ body {
   margin: 10px;
 }
 
-/* line 119, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 124, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_slogan {
   font-family: 'Gotham_Book';
   color: #044359;
@@ -534,14 +540,14 @@ body {
   padding-left: 20px;
 }
 
-/* line 127, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 132, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* line 132, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 137, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img {
   margin: auto;
   text-align: center;
@@ -551,7 +557,7 @@ body {
   padding: 10px;
 }
 
-/* line 140, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 145, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img div {
   width: 180px;
   height: 180px;
@@ -563,47 +569,47 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 151, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 156, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img .ombre_tablet {
   display: none;
 }
 
-/* line 156, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 161, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img:nth-child(1) {
   order: 3;
 }
 
-/* line 158, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 163, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img:nth-child(1) div {
   background-image: url("../img/image_gym.jpg");
 }
 
-/* line 163, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 168, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img:nth-child(2) {
   order: 1;
 }
 
-/* line 165, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 170, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img:nth-child(2) div {
   background-image: url("../img/image_smartphone.jpg");
 }
 
-/* line 170, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 175, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img:nth-child(3) {
   order: 2;
 }
 
-/* line 172, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+/* line 177, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img .img:nth-child(3) div {
   background-image: url("../img/image_cryolipolyse.png");
 }
 
 @media screen and (min-width: 768px) {
-  /* line 181, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 186, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img {
     flex-direction: row;
   }
-  /* line 186, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 191, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img .img .ombre_tablet {
     display: block;
     width: 180px;
@@ -612,37 +618,44 @@ body {
     background-image: none;
     filter: blur(10px);
   }
+  /* line 201, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  .region_img .img:nth-child(1) {
+    order: 1;
+  }
+  /* line 205, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  .region_img .img:nth-child(2) {
+    order: 2;
+  }
+  /* line 209, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  .region_img .img:nth-child(3) {
+    order: 3;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 203, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 220, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_top .conseille {
     flex-direction: row;
   }
-  /* line 206, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 223, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_top .conseille span:first-of-type {
     padding-left: 20px;
   }
-  /* line 211, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 228, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_top .conseille span:last-of-type {
     padding-top: 3px;
     padding-left: 2px;
   }
-  /* line 218, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  /* line 223, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 235, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_slogan {
     justify-content: flex-end;
     padding-right: 20px;
   }
-  /* line 228, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 240, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img {
     flex-direction: row;
   }
-  /* line 233, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 245, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img .img .ombre_tablet {
     display: none;
   }

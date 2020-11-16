@@ -21,6 +21,11 @@ body {
    font-family: 'Bernina';
 }
 
+.container {
+   max-width: 996px;
+   margin: 0 auto;
+}
+
 .region_top {
    background: url('../img/background.jpg');
    background-size: cover;
@@ -192,6 +197,18 @@ body {
             filter: blur(10px);
          }
       }
+
+      .img:nth-child(1) {
+         order: 1;
+      }
+
+      .img:nth-child(2) {
+         order: 2;
+      }
+
+      .img:nth-child(3) {
+         order: 3;
+      }
    }
 }
 
@@ -213,11 +230,6 @@ body {
             padding-left: 2px;
          }
       }
-   }
-
-   .container {
-      max-width: 800px;
-      margin: 0 auto;
    }
 
    .region_slogan {
