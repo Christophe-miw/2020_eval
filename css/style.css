@@ -1,4 +1,23 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "BerniaSansCondensedBold";
+  src: url("../fonts/BerninaSansCondensedBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GothamRegular";
+  src: url("../fonts/Gotham.woff2") format("woff2");
+}
+
+/* GENERAL */
+p,
+a,
+span,
+h1,
+h2 {
+  font-family: BerniaSansCondensedBold;
+}
+
 /* S -> Jusqu'à 480px */
 header {
   /* Position */
@@ -24,7 +43,7 @@ header .promotion {
   padding: 8px;
   /* Style */
   border-radius: 10px;
-  background-color: #7F0524;
+  background-color: #7f0524;
   color: white;
 }
 
@@ -72,14 +91,36 @@ header .bandeau span:nth-child(2) {
 }
 
 .section {
-  /* LOGO + BOUTON */
+  /* DIV: LOGO + BOUTON */
+  /* Titre */
+  /* Texte */
+  /* Images Produits*/
+}
+
+.section .contain {
+  /* Comportement */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px;
 }
 
 .section div:nth-child(1) {
+  /* Comportement */
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  /* Dimension */
+  width: 100%;
+  /* Logo */
+  /* BOUTON "PRENDRE RDV" */
 }
 
 .section div:nth-child(1) .img {
@@ -91,27 +132,118 @@ header .bandeau span:nth-child(2) {
 }
 
 .section div:nth-child(1) input[type="button"] {
+  /* Dimension */
   width: 170px;
   height: 40px;
+  /* Style */
   border-radius: 10px;
   border: 1px solid black;
-  color: #00465B;
+  color: #00465b;
   background-color: white;
   font-size: 25px;
   font-weight: 250;
 }
 
+.section h1 {
+  text-align: center;
+  color: #00465b;
+  font-size: 37px;
+}
+
+.section p {
+  display: block;
+  width: 85%;
+  color: #00465b;
+  text-align: center;
+}
+
+.section h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 15px;
+  color: #00465b;
+}
+
+.section .produits {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+}
+
+.section .produits div:nth-child(3) img {
+  border-radius: 300px;
+}
+
+.section .produits span {
+  font-family: "GothamRegular";
+  font-size: 12px;
+}
+
+.section .produits div {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 30px;
+}
+
+.section .produits div img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
 /* M -> A partir de 480px */
 @media (min-width: 480px) {
-  body {
-    background-color: red;
+  .section h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 15px;
+  }
+  .section .produits {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .section .produits div {
+    width: 50%;
+  }
+  .section .produits div:nth-child(3) {
+    -ms-flex-order: -1;
+        order: -1;
   }
 }
 
 /* M -> A partir de 700px */
 @media (min-width: 768px) {
-  body {
-    background-color: blue;
+  .section h2 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 15px;
+  }
+  .section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .contain {
+    max-width: 768px;
   }
 }
 

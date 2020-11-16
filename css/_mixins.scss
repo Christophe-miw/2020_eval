@@ -24,3 +24,9 @@ $breakpoints: (
             + "Vérifier que  `$breakpoints` est définit dans la map.";
     }
 }
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
