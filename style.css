@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'bernina';
+    src: url('fonts/BerninaSans-Web-CondensedBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'gotham';
+    src: url('fonts/Gotham_htf_Book.woff2') format('woff2');
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+img
+{
+    width: 100%;
+}
+
+body{
+    background-color: #f7ffff;
+    font-family: 'bernina';
+}
+
+.background{
+    background-image: url("img/background.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 600px;
+
+}
+
+
+.promo
+{
+    font-family: 'gotham';
+    font-size: 1rem;
+    background-color: #810426;
+    color: white;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width:200px;
+    height: 80px;
+    transform: rotate(15deg);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.duree
+{
+    font-size: 0.5rem;
+}
+
+.bandeau
+{
+    background-color: rgba(255,255,255, 0.2);
+    color: white;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.texteBandeauHaut
+{
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+.texteBandeauBas
+{
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.logoRdv{
+    display: flex;
+}
+
+.logo{
+}
+.gauche
+{
+    width: 50%;
+}
+.droite
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boutton{
+    border: solid gray 1px;
+    background-color: #f7ffff;
+    text-decoration: none;
+    color: #00465b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.page{
+    color: #00465b;
+    text-align: center;
+}
+
+.titre{
+    font-size: 3rem;
+}
+
+.description{
+    font-size: 1.2rem;
+    margin: 10px 20px;
+}
+
+.bottom
+{
+    display: flex;
+    flex-direction: column;
+    font-family: 'gotham';
+    padding: 5px;
+}
+
+.experience
+{
+    text-align: left;
+    margin-top: 20px;
+    letter-spacing: 10px;
+}
+
+.categorie{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgElement
+{
+    width: 200px;
+    clip-path:ellipse(50% 50%);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+/* petites tablettes et telephones */
+@media screen and (min-width: 481px)
+{
+    .categorie{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .gauche
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .droite
+    {
+        justify-content: flex-end;
+    }
+    .logo{
+        width: 250px;
+    }
+
+
+}
+
+/* grandes tablettes et desktop */
+@media screen and (min-width: 769px)
+{
+    .corps{
+        width: 769px;
+        margin: 0 auto;
+    }
+}
