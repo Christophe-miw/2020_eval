@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Bernina;
+  src: url('../fonts/BerninaSans-Web-CondensedBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: Gotham;
+  src: url('../fonts/GothamPro.woff2') format('woff2');
+}
+$MOBILE : "576px";
+$TABLET : "480px";
+$DESKTOP : "768px";
+$MENU : $TABLET;
+$COULEUR : #03475e;
+$COULEURFONCE : darken($COULEUR, 40%);
+$COULEURCLAIR : lighten($COULEUR, 25%);
+
+body{
+  background-size: cover;
+  font-family: Bernina, "serif";
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+header{
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  height: 80vh;
+}
+
+.ice_experience{
+  h3{
+    font-family: Gotham, "serif";
+  }
+}
