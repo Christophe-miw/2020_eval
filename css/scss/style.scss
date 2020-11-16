@@ -1,0 +1,177 @@
+$rouge: #810426;
+$white: #FFFFFF;
+$grey: #C5CFD9;
+$blue: #004352;
+
+@font-face {
+  font-family: "fontText";
+  src: url("../fonts/BerminaSans-Web-CondensedBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/GothamHTF-Book.woff2") format("woff2");
+}
+
+/*CSS du header*/
+header {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .affich_promo {
+    transform: rotate(25deg);
+    color: $white;
+    width: 50%;
+    background-color: $rouge;
+    border-radius: 15px;
+  }
+
+  .encadre_header {
+    background-color: $grey;
+    opacity: 90%;
+    width: 100%;
+    color: $white;
+  }
+}
+
+.affich_promo {
+  p {
+    font-family: fontText;
+    text-align: center;
+  }
+
+  p:first-child {
+    font-size: 2em;
+  }
+}
+
+.encadre_header {
+  p {
+    margin-left: 20px;
+    font-family: fontText;
+  }
+
+  p:first-child {
+    font-size: 2em;
+  }
+}
+
+/*FIN CSS header*/
+
+
+/*CSS corps de la page*/
+.container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .ice_experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: $blue;
+  }
+
+  .container_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.logo {
+  margin-bottom: 50px;
+
+  img {
+    width: 45%;
+    height: auto;
+    margin-right: 10%;
+  }
+
+  button {
+    align-items: center;
+    width: 45%;
+    height: 100px;
+    background-color: $white;
+    font-family: fontText;
+    font-size: 2.5em;
+    color: $blue;
+    border-radius: 15px;
+  }
+}
+
+.titre {
+  margin-bottom: 50px;
+
+  h1 {
+    color: $blue;
+    text-align: center;
+    font-family: fontText;
+    font-size: 4em;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    color: $blue;
+    text-align: center;
+    font-family: fontText;
+    font-size: 2.7em;
+  }
+}
+
+.card {
+  width: 66%;
+  margin: 0 auto;
+
+  h3 {
+    text-align: center;
+    font-family: Gotham;
+    color: $blue;
+    font-size: 1.5em;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+
+/*FIN CSS corps de la page*/
+
+/*CSS Tablette*/
+@media screen and (min-width: 480px) {
+  .container_card {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .card{
+    width: 33%;
+  }
+  .card:last-child {
+    order: -1;
+  }
+}
+
+/*CSS Desktop*/
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
