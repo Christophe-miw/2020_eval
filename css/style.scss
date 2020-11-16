@@ -1,5 +1,12 @@
 @import 'fonts';
 
+@mixin GothamLightSpaced($space) {
+  font-family: "GothamHTF";
+  font-weight: 200;
+  letter-spacing: $space;
+  color: inherit;
+}
+
 header {
   height: 700px;
   background: no-repeat center/cover url("../img/background.jpg");
@@ -14,7 +21,6 @@ header {
     color: #fff;
     background-color: #811226;
     font-family: "GothamHTF";
-    font-size: 1.5em;
     text-align: center;
   }
   .promo small {
@@ -31,7 +37,6 @@ header {
     color: #fff;
     background-color: #fff3;
     font-family: "Bernina Sans";
-    font-size: 1.5em;
     span:last-child {
       font-size: 0.6em;
     }
@@ -40,6 +45,8 @@ header {
 
 .container {
   padding: 10px;
+  font-family: "Bernina Sans";
+  color: #12465b;
 }
 
 .logo_bouton {
@@ -53,10 +60,16 @@ header {
     padding: 5px;
     border: 1px solid #777;
     border-radius: 10px;
-    color: #12465b;
     background-color: #fff;
-    font-family: "GothamHTF";
-    font-weight: 200;
-    font-size: 1.5em;
+  @include GothamLightSpaced(0.05em);
+  }
+}
+
+.presentation {
+  text-align: center;
+  .txtVignette {
+    @include GothamLightSpaced(0.2em);
+    font-size: 0.75em;
+    text-align: left;
   }
 }
