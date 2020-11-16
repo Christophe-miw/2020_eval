@@ -37,3 +37,26 @@ header {
     }
   }
 }
+
+.container {
+  padding: 10px;
+}
+
+.logo_bouton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    width: 50%;
+  }
+  .bouton {
+    padding: 5px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    color: #12465b;
+    background-color: #fff;
+    font-family: "GothamHTF";
+    font-weight: 200;
+    font-size: 1.5em;
+  }
+}

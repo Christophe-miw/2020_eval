@@ -60,4 +60,32 @@ header .accroche span:last-child {
   font-size: 0.6em;
 }
 
+.container {
+  padding: 10px;
+}
+
+.logo_bouton {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.logo_bouton .logo {
+  width: 50%;
+}
+
+.logo_bouton .bouton {
+  padding: 5px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  color: #12465b;
+  background-color: #fff;
+  font-family: "GothamHTF";
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
 /*# sourceMappingURL=style.css.map */
