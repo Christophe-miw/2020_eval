@@ -32,10 +32,13 @@ et au grand public de bénéficier de cette thérapie puissante et novatrice.
 ## CSS
 |Point|description|
 |-----|-----------|
-|4pts |qualité du code|
+|4pts |qualité du code| 
 |2pts |nommage des classes|
-|2pts |polices|
-|2pts |utilisation scss|
-|2pts |utilisation 2 fonctions scss|
-|2pts |texte promotionnel en rouge|
+|2pts |polices| ok
+|2pts |utilisation scss| ok
+|2pts |utilisation 2 fonctions scss| ok
+|2pts |texte promotionnel en rouge| 
+
+
+STARTER: https://github.com/TheoLeao/ProjectStarter/
 

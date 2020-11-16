@@ -1,0 +1,203 @@
+@import "mixins";
+$CG_bleu: #00465b;
+
+@font-face {
+    font-family: "BerniaSansCondensedBold";
+    src: url("../fonts/BerninaSansCondensedBold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "GothamRegular";
+    src: url("../fonts/Gotham.woff2") format("woff2");
+}
+/* GENERAL */
+p,
+a,
+span,
+h1,
+h2 {
+    font-family: BerniaSansCondensedBold;
+}
+
+/* S -> Jusqu'à 480px */
+header {
+    /* Position */
+    position: relative;
+    /* Style */
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /* Dimension */
+    height: 500px;
+
+    /* Enfants */
+    .promotion {
+        /* Position */
+        position: absolute;
+        top: 55px;
+        right: 25px;
+        transform: rotate(20deg);
+        /* Dimension */
+        width: 210px;
+        padding: 8px;
+        /* Style */
+        border-radius: 10px;
+        background-color: #7f0524;
+        color: white;
+
+        span:nth-child(1) {
+            font-size: 1.2em;
+        }
+        span:nth-child(2) {
+            font-style: italic;
+            font-size: 0.8em;
+        }
+    }
+    .bandeau {
+        /* Position */
+        position: absolute;
+        bottom: 20px;
+
+        /* Comportement */
+        display: flex;
+        flex-direction: column;
+        /* Dimension */
+        height: auto;
+        width: 100%;
+        /* Style */
+        background-color: rgba(153, 153, 153, 0.5);
+        padding-left: 10px;
+
+        span {
+            /* Style */
+            color: white;
+        }
+        span:nth-child(1) {
+            /* Style */
+            color: white;
+            /* Espacement */
+            margin-bottom: 0px;
+        }
+        span:nth-child(2) {
+            /* Style */
+            font-size: 10px;
+        }
+    }
+}
+.section {
+    .contain {
+        /* Comportement */
+        @include flex-column;
+        align-items: center;
+        padding: 10px;
+    }
+    /* DIV: LOGO + BOUTON */
+    div:nth-child(1) {
+        /* Comportement */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* Dimension */
+        width: 100%;
+        /* Logo */
+        .img {
+            width: 55%;
+            img {
+                width: 100%;
+            }
+        }
+        /* BOUTON "PRENDRE RDV" */
+        input[type="button"] {
+            /* Dimension */
+            width: 170px;
+            height: 40px;
+            /* Style */
+            border-radius: 10px;
+            border: 1px solid black;
+            color: $CG_bleu;
+            background-color: white;
+            font-size: 25px;
+            font-weight: 250;
+        }
+    }
+    /* Titre */
+    h1 {
+        text-align: center;
+        color: $CG_bleu;
+        font-size: 37px;
+    }
+    /* Texte */
+    p {
+        display: block;
+        width: 85%;
+        color: $CG_bleu;
+        text-align: center;
+    }
+    h2 {
+        align-self: flex-start;
+        font-size: 15px;
+        color: $CG_bleu;
+    }
+    /* Images Produits*/
+    .produits {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        div:nth-child(3) img {
+            border-radius: 300px;
+        }
+        span {
+            font-family: "GothamRegular";
+            font-size: 12px;
+        }
+    }
+    .produits div {
+        width: 80%;
+        @include flex-column;
+        align-items: center;
+        margin-bottom: 30px;
+        img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+    }
+}
+/* M -> A partir de 480px */
+@include respond-to("M") {
+    .section h2 {
+        align-self: flex-start;
+        font-size: 15px;
+    }
+    .section .produits {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section .produits div {
+        width: 50%;
+    }
+    .section .produits div:nth-child(3) {
+        order: -1;
+    }
+}
+/* M -> A partir de 700px */
+@include respond-to("L") {
+    .section h2 {
+        align-self: flex-end;
+        font-size: 15px;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contain {
+        max-width: 768px;
+    }
+    .section .produits div {
+        width: 30%;  
+    }
+}
