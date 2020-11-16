@@ -1,0 +1,265 @@
+@font-face {
+  font-family: Bernina;
+  src: url('../fonts/BerninaSans-Web-CondensedBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url('../fonts/GothamPro.woff2') format('woff2');
+}
+
+body {
+  background-size: cover;
+  font-family: Bernina, "serif";
+  color: $COULEUR;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// La variable Hauteur est changer dans _placeholder en fonction du device
+header {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: $HAUTEUR;
+  color: white;
+
+  .reduction {
+    background-color: $RED;
+    border-radius: 10px;
+    position: absolute;
+    top: 10vh;
+    left: 30%;
+    margin-right: 10%;
+    padding: 10px;
+    transform: rotate(25deg);
+    font-size: 1.2em;
+
+    span {
+      font-size: 0.7em;
+    }
+  }
+
+  // Le bando info est placé un peu plus haut que la fin de la hauteur du header
+  // 102 pour avoir une marge de 2vh en bas
+  .bando_info {
+    background-color: rgba(169, 169, 169, 0.5);
+    position: absolute;
+    bottom: 102 - $HAUTEUR;
+    left: 0;
+    padding-left: 15px;
+    width: 100%;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// En mode mobile et tablette le content a juste besoin d'un peu d'espace sur les côtés
+.content {
+  padding: 5px;
+
+  nav {
+    display: flex;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+
+    h1 {
+      margin: 0 auto;
+
+      span {
+        display: none;
+      }
+    }
+
+    .button--rdv {
+      border: 1px $COULEUR solid;
+      border-radius: 5px;
+      font-size: 1.5em;
+      margin: 0 auto;
+
+      a {
+        text-decoration: none;
+        width: 100%;
+        display: inline-block;
+        padding: 5px;
+      }
+    }
+  }
+
+  .align--center {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  h3 {
+    font-family: Gotham, "serif";
+  }
+
+  .ice_experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .inner-content {
+      text-align: center;
+      width: 100%;
+
+      // Cette div permet de modifier la taille des images
+      div {
+        margin: 10px auto;
+        width: 200px;
+
+        img {
+          overflow: hidden;
+          border-radius: 100px;
+        }
+      }
+
+      h3 {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $TABLET) {
+  .content {
+    nav {;
+      justify-content: space-between;
+
+      // Pour ajuster la taille du logo
+      svg {
+        width: 300px;
+        height: 200px;
+      }
+
+      .button--rdv {
+        border-radius: 15px;
+        font-size: 2.2em;
+
+        a {
+          padding: 10px;
+        }
+      }
+    }
+
+    .align--center {
+      p {
+        font-size: 1.8em;
+      }
+    }
+
+    h3 {
+      font-size: 1.8em;
+    }
+
+    .ice_experience {
+      margin-top: 20px;
+
+      .inner-content {
+        width: 50%;
+        margin: 30px auto;
+
+        &:nth-child(2) {
+          order: 3;
+        }
+
+        &:nth-child(1) {
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $DESKTOP) {
+
+  header {
+    background-position: initial;
+    height: $HAUTEUR;
+
+    .reduction {
+      left: 75%;
+    }
+
+    .bando_info {
+      display: flex;
+      align-items: center;
+      bottom: 102 - $HAUTEUR;
+
+      h3 {
+        font-size: 1.8em;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1.2em;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  // En Desktop le content se retrouve avec des marges importantes sut les côtés
+  .content {
+    width: 60%;
+    margin: 0 auto;
+
+    nav {
+      height: 10vh;
+      margin-bottom: 10%;
+
+      svg {
+        height: 80px;
+      }
+
+      .button--rdv {
+        a:hover {
+          background-color: $COULEURFONCE;
+          color: white;
+          border-radius: 15px;
+        }
+      }
+    }
+
+    .align--center {
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    .align--right {
+      text-align: right;
+      margin-top: 50px;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    .ice_experience {
+      .inner-content {
+        width: auto;
+
+        div {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+
