@@ -140,7 +140,9 @@ header {
     }
     /* Images Produits*/
     .produits {
-        @include flex-column;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         width: 100%;
         div:nth-child(3) img {
@@ -194,5 +196,8 @@ header {
     }
     .contain {
         max-width: 768px;
+    }
+    .section .produits div {
+        width: 30%;  
     }
 }

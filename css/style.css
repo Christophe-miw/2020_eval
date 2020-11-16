@@ -167,9 +167,10 @@ header .bandeau span:nth-child(2) {
 .section .produits {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 100%;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
@@ -244,6 +245,9 @@ header .bandeau span:nth-child(2) {
   }
   .contain {
     max-width: 768px;
+  }
+  .section .produits div {
+    width: 30%;
   }
 }
 
