@@ -1,4 +1,7 @@
-# Evaluation MIW2018 n°1
+# Evaluation MIW2020 n°1
+
+## Starter Yohan Salamone : 
+https://github.com/ysalamone/2020_starter_MIW
 
 ## Polices :
 * police principale : Bernina (cf fichier joint)
