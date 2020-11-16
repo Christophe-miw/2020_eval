@@ -543,7 +543,7 @@ body {
 /* line 132, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
 .region_img {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -605,11 +605,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 186, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
-  .region_img {
-    flex-direction: row;
-  }
-  /* line 191, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 190, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img .img .ombre_tablet {
     display: block;
     width: 180px;
@@ -618,44 +614,44 @@ body {
     background-image: none;
     filter: blur(10px);
   }
-  /* line 201, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 200, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img .img:nth-child(1) {
     order: 1;
   }
-  /* line 205, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 204, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img .img:nth-child(2) {
     order: 2;
   }
-  /* line 209, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 208, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img .img:nth-child(3) {
     order: 3;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 220, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 219, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_top .conseille {
     flex-direction: row;
   }
-  /* line 223, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 222, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_top .conseille span:first-of-type {
     padding-left: 20px;
   }
-  /* line 228, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 227, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_top .conseille span:last-of-type {
     padding-top: 3px;
     padding-left: 2px;
   }
-  /* line 235, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 234, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_slogan {
     justify-content: flex-end;
     padding-right: 20px;
   }
-  /* line 240, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 239, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img {
     flex-direction: row;
   }
-  /* line 245, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
+  /* line 244, ../César/Documents/MIW/Integration/github/2020_eval/scss/style.scss */
   .region_img .img .ombre_tablet {
     display: none;
   }

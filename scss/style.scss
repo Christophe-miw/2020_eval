@@ -131,7 +131,7 @@ body {
 
 .region_img {
    display: flex;
-   flex-direction: column;
+   flex-wrap: wrap;
    justify-content: center;
 
    .img {
@@ -184,7 +184,6 @@ body {
 @media screen and (min-width: 768px) {
 
    .region_img {
-      flex-direction: row;
 
       .img {
 
