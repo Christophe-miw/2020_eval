@@ -21,6 +21,7 @@ et au grand public de bénéficier de cette thérapie puissante et novatrice.
 - 30% CRYOLIPOLYSE Body Sculpt sur toute formule jusqu’à fin octobre
 ```
 
+
 # Grille d'évaluation
 
 ## HTML

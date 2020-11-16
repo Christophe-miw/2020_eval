@@ -1,3 +1,40 @@
+@media screen and (min-width: 480px){
+
+  .container{
+    article{
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .main{
+    width: 732px;
+  }
+
+  .container{
+    article{
+      width: 25%;
+    }
+  }
+
+  .liste{
+    text-align: right;
+  };
+
+  .conseil{
+    display: flex;
+  }
+}
+
+body{
+  font-family: Bernina;
+}
+
+.inner{
+  margin: 0 auto;
+}
+
 .img-background{
   background-image: url("../img/background.jpg");
   background-position: center;
@@ -6,23 +43,78 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  div{
-    background-color: rgba(255, 255 ,255, 0.3);
-    margin-bottom: 1em;
-    h4{
-      margin: 2px;
-    }
-    p{
-      margin: 2px;
-    }
+}
+
+.promo{
+  padding: 2px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  transform: rotate(25deg);
+  background-color: $backRed;
+  width: 200px;
+  position: absolute;
+  right: 8%;
+  top: 8%;
+}
+
+.conseil{
+  color: white;
+  background-color: rgba(255, 255 ,255, 0.3);
+  margin-bottom: 1em;
+  padding-left: 2em;
+  h4{
+    margin: 2px;
+  }
+  p{
+    margin: 2px;
   }
 }
 
 .contact{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 82px;
+  button{
+    border-radius: 5px;
+    border: solid 1px $txtBlue;
+    color: $txtBlue;
+  }
 }
 
 .main{
-  text-align: center;
+  font-family: GothamHTF-Book;
+  h1{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  color: $txtBlue;
 }
+
+.liste{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* tentative de floutage des images*/
+article{
+  img{
+    border-radius: 50%;
+    box-shadow: 0 0 70px 20px white inset;
+  }
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  article{
+    margin: 1em;
+    text-align: center;
+  }
+}
+

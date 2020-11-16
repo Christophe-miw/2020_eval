@@ -42,6 +42,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\2020_eval\fonts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\2020_eval\CSS\SCSS" />
     </key>
@@ -54,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605517579663</updated>
-      <workItem from="1605517581144" duration="3028000" />
+      <workItem from="1605517581144" duration="8406000" />
     </task>
     <servers />
   </component>
@@ -62,17 +65,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="637" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605517890352">
+    <state x="637" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605520797740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.-189.1280.984@0.0.1920.1040" timestamp="1605517890352" />
+    <state x="637" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.-189.1280.984@0.0.1920.1040" timestamp="1605520797740" />
     <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1605520560117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040/1920.-189.1280.984@0.0.1920.1040" timestamp="1605520560117" />
-    <state x="1920" y="-189" width="1296" height="1028" key="dock-window-1" timestamp="1605520615735">
+    <state x="1782" y="-211" width="1296" height="1028" key="dock-window-1" timestamp="1605525999428">
       <screen x="1920" y="-189" width="1280" height="984" />
     </state>
-    <state x="1920" y="-189" width="1296" height="1028" key="dock-window-1/0.0.1920.1040/1920.-189.1280.984@0.0.1920.1040" timestamp="1605520615735" />
+    <state x="1782" y="-211" width="1296" height="1028" key="dock-window-1/0.0.1920.1040/1920.-189.1280.984@0.0.1920.1040" timestamp="1605525999428" />
   </component>
 </project>
