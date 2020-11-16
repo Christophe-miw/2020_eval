@@ -1,5 +1,13 @@
 @import 'fonts';
 
+@mixin PosAbsolute($top, $right: initial, $bottom: initial, $left: initial) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
 @mixin GothamLightSpaced($space) {
   font-family: "GothamHTF";
   font-weight: 200;
@@ -12,9 +20,7 @@ header {
   background: no-repeat center/cover url("../img/background.jpg");
   .promo {
     transform: rotate(20deg);
-    position: absolute;
-    top: 70px;
-    right: 30px;
+    @include PosAbsolute(70px, 30px);
     padding: 10px;
     width: 300px;
     border-radius: 10px;
@@ -28,8 +34,7 @@ header {
     font-size: 0.6em;
   }
   .accroche {
-    position: absolute;
-    top: 620px;
+    @include PosAbsolute(620px);
     padding: 0 20px;
     display: flex;
     flex-direction: column;

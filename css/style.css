@@ -27,6 +27,8 @@ header .promo {
   position: absolute;
   top: 70px;
   right: 30px;
+  bottom: initial;
+  left: initial;
   padding: 10px;
   width: 300px;
   border-radius: 10px;
@@ -44,6 +46,9 @@ header .promo small {
 header .accroche {
   position: absolute;
   top: 620px;
+  right: initial;
+  bottom: initial;
+  left: initial;
   padding: 0 20px;
   display: -ms-flexbox;
   display: flex;
