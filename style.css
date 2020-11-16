@@ -20,6 +20,7 @@
     body {
         font-family: "Gotham", serif;
     }
+    /* application des styles du header */
     
     header {
         background-image: url('./img/background.jpg');
