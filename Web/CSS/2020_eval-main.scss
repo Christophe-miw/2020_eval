@@ -1,0 +1,346 @@
+@import 'reset.css';
+
+@font-face {
+  font-family: "BerninaSans";
+  src: url("../../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../fonts/Gotham-HTF-Light.woff2") format("woff2");
+}
+
+@mixin display_flex($justify-content,$flex-wrap,$flex-direction) {
+  display: flex;
+  justify-content: $justify-content;
+  flex-wrap: $flex-wrap;
+  flex-direction: $flex-direction;
+}
+
+@mixin colored($bkg,$col) {
+  color: $col;
+  background-color: $bkg;
+}
+
+$couleurDuContenu: #034458;
+/***********************************/
+/*             DEFAULT             */
+/*            TELEPHONE            */
+/***********************************/
+
+/***************/
+/*    Style    */
+/***************/
+
+/**********/
+/* header */
+header {
+  background-image: url("../../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header-Promo {
+  @include colored(#810328, white);
+
+}
+
+.header-LegendeImage {
+  @include colored(rgba(255, 255, 255, 0.20), white);
+}
+
+/********/
+/* main */
+.main-PresentationEnterprise {
+  .mainBtn-PresentationEnterprise {
+    a {
+      @include colored(white, $couleurDuContenu);
+    }
+  }
+}
+
+.main-ContenuDAccueil {
+  @include colored(transparent, $couleurDuContenu);
+}
+
+.main-TitreContenu {
+  h2 {
+    @include colored(transparent, $couleurDuContenu);
+  }
+}
+
+.main-ChoixProgramme {
+  li {
+    p {
+      @include colored(transparent, $couleurDuContenu);
+    }
+  }
+}
+
+/******************/
+/*    Structure   */
+/******************/
+
+/**********/
+/* header */
+header {
+  height: 100vh;
+  width: 100%;
+  font-family: "BerninaSans";
+
+  div:nth-child(2) {
+    height: 100%;
+    @include display_flex(flex-end, nowrap, column);
+  }
+}
+
+.header-Promo {
+  position: absolute;
+  transform: rotate(25deg);
+  top: 75px;
+  right: 35px;
+  border: transparent 1px solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  width: 310px;
+  height: auto;
+
+  p {
+    font-size: 1.3em;
+    text-transform: uppercase;
+
+    span {
+      font-size: 0.6em;
+    }
+  }
+
+  h2 {
+    font-size: xx-large;
+  }
+}
+
+.header-LegendeImage {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 20px;
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+
+    span {
+      font-size: 0.5em;
+
+    }
+  }
+}
+
+/********/
+/* main */
+main {
+  font-family: "BerninaSans";
+}
+
+.main-PresentationEnterprise {
+  padding: 0px;
+  list-style: none;
+  margin-top: 20px;
+  @include display_flex(space-around, wrap, row);
+
+  li {
+    a {
+      text-decoration: none;
+      border: none;
+      background-color: transparent;
+
+      img {
+        width: 180px;
+        height: auto;
+      }
+    }
+  }
+
+  .mainBtn-PresentationEnterprise {
+    margin-top: 15px;
+    font-family: "Gotham";
+
+    a {
+      padding: 5px;
+      padding-top: 10px;
+      border: solid 1px #034458;
+      border-radius: 5px;
+      @include colored(white, #034458);
+      font-size: 1.5em;
+    }
+  }
+}
+
+.main-ContenuDAccueil {
+  text-align: center;
+
+  h1 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 10px;
+  }
+}
+
+.main-TitreContenu {
+  @include display_flex(flex-start, nowrap, row);
+  font-family: "Gotham";
+  margin: 10px;
+}
+
+.main-ChoixProgramme {
+  padding: 0px;
+  list-style: none;
+  @include display_flex(space-around, wrap, row);
+
+  li {
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 1000px;
+      margin-bottom: 20px;
+    }
+
+    p {
+
+      font-family: "Gotham";
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.2em;
+    }
+  }
+
+  li:nth-child(1) {
+    order: 1;
+  }
+
+  li:nth-child(2) {
+    order: 2;
+  }
+
+  li:nth-child(3) {
+    order: 3;
+  }
+}
+
+/***********************************/
+/*             TABLETTE            */
+/***********************************/
+@media screen and (min-width: 768px) {
+
+  /********/
+  /* main */
+  .main-PresentationEnterprise {
+    margin: 20px;
+    margin-top: 20px;
+    @include display_flex(space-between, nowrap, row);
+
+    li {
+      img {
+        width: 260px;
+      }
+    }
+  }
+
+  .mainBtn-PresentationEnterprise {
+
+    a {
+      padding: 10px;
+      padding-top: 14px;
+    }
+  }
+
+  .main-TitreContenu {
+    margin-top: 50px;
+  }
+
+  .main-ChoixProgramme {
+    @include display_flex(space-around, wrap, row);
+
+    li {
+      margin: 50px;
+      margin-top: 5px;
+      /*width: 30%;*/
+
+      img {
+        width: 220px;
+      }
+    }
+
+    li:nth-child(1) {
+      order: 2;
+    }
+
+    li:nth-child(2) {
+      order: 3;
+    }
+
+    li:nth-child(3) {
+      order: 1;
+    }
+  }
+}
+
+/***********************************/
+/*             DESKTOP             */
+/***********************************/
+@media screen and (min-width: 970px) {
+
+  /********/
+  /* main */
+  main {
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+
+  .main-TitreContenu {
+    @include display_flex(flex-end, nowrap, row);
+    margin-top: 50px;
+  }
+
+  .main-ChoixProgramme {
+    @include display_flex(space-around, nowrap, row);
+
+    li {
+      margin-top: 5px;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    li:nth-child(1) {
+      order: 2;
+    }
+
+    li:nth-child(2) {
+      order: 3;
+    }
+
+    li:nth-child(3) {
+      order: 1;
+    }
+  }
+}
+
+/***********************************/
+/*               TV                */
+/***********************************/
+@media screen and (min-width: 1370px) {
+
+
+}
